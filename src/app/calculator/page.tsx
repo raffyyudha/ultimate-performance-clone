@@ -253,7 +253,7 @@ export default function CalculatorPage() {
       <section className="relative h-[320px] md:h-[400px] w-full flex items-center justify-center bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
         <Image
-          src="/4122906706.avif"
+          src="/contact_hero.png"
           alt="Fitness & Nutrition Calculators"
           fill
           priority

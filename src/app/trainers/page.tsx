@@ -39,7 +39,7 @@ export default function TrainersPage() {
       {/* SECTION 1: HERO BANNER */}
       <section className="relative h-[480px] w-full flex items-center justify-center bg-black overflow-hidden">
         <Image
-          src="/4122906706.avif"
+          src="/contact_hero.png"
           alt="D'Quatre Trainers Hero"
           fill
           priority
@@ -59,7 +59,7 @@ export default function TrainersPage() {
           {/* Left Column: Image of client training */}
           <div className="md:col-span-6 relative h-[300px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-lg border border-gray-100">
             <Image
-              src="/1672286226.avif"
+              src="/pt_elite.png"
               alt="Elite Coaching Squat"
               fill
               className="object-cover"
@@ -126,7 +126,7 @@ export default function TrainersPage() {
           {/* Right Column: Grayscale image of row training */}
           <div className="md:col-span-6 relative h-[300px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-lg border border-gray-100 order-1 md:order-2">
             <Image
-              src="/2895990328.avif"
+              src="/pt_philosophy.png"
               alt="Rigorous Selection Assessment"
               fill
               className="object-cover filter grayscale"
@@ -206,7 +206,7 @@ export default function TrainersPage() {
           {/* Right Column: Image */}
           <div className="md:col-span-6 relative h-[300px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-lg border border-gray-100 order-1 md:order-2">
             <Image
-              src="/3506738022.webp"
+              src="/goal_longevity.png"
               alt="1-to-1 singular coach focus"
               fill
               className="object-cover"
@@ -221,7 +221,7 @@ export default function TrainersPage() {
           {/* Left Column: Image */}
           <div className="md:col-span-6 relative h-[300px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-lg border border-gray-100">
             <Image
-              src="/615669077.webp"
+              src="/pt_standards.png"
               alt="Standards accountability check"
               fill
               className="object-cover"
@@ -284,7 +284,7 @@ export default function TrainersPage() {
           {/* Right Column: Image with Custom Dashboard Overlay */}
           <div className="md:col-span-6 relative h-[300px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-lg border border-gray-100 order-1 md:order-2">
             <Image
-              src="/3002271088.webp"
+              src="/goal_weight_management.png"
               alt="Data tracking platform"
               fill
               className="object-cover"

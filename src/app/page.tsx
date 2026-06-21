@@ -109,7 +109,7 @@ export default function Home() {
           </div>
           <div className="relative h-[300px] md:h-[500px]">
             <Image
-              src="/2895990328.avif"
+              src="/pt_philosophy.png"
               alt="Training"
               fill
               className="object-cover rounded-lg"
@@ -271,9 +271,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { title: "Weight management", desc: "Sustainable weight loss and body recomposition plans.", img: "/4100845651.webp" },
+              { title: "Weight management", desc: "Sustainable weight loss and body recomposition plans.", img: "/goal_weight_management.png" },
               { title: "Muscle development", desc: "Biomechanical progression to build strength and lean mass.", img: "/GANTI_ORANGNYA_JADI_SINGAPOREAN_202606211917.jpeg" },
-              { title: "Longevity & Health", desc: "Active aging and lifestyle systems for busy executives and seniors.", img: "/3506738022.webp" },
+              { title: "Longevity & Health", desc: "Active aging and lifestyle systems for busy executives and seniors.", img: "/goal_longevity.png" },
             ].map((goal, i) => (
               <div key={i} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow cursor-pointer group">
                 <div className="relative h-[250px] grayscale group-hover:grayscale-0 transition-all">

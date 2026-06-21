@@ -9,54 +9,39 @@ export default function GalleryPage() {
 
   const categories = [
     { id: "all", label: "ALL PHOTOS" },
-    { id: "apparel", label: "QUATRE MERCH" },
-    { id: "supplements", label: "FITLINE NUTRITION" },
     { id: "training", label: "MOBILE PT SESSIONS" },
-    { id: "events", label: "WELLNESS EVENTS" },
   ];
 
   const galleryItems = [
     {
-      category: "apparel",
-      title: "Quatre Merch Premium Apparel",
-      img: "/HEROIMAGES.jpeg",
+      category: "training",
+      title: "One-on-One Biomechanics Coaching",
+      img: "/pt_philosophy.png",
+      heightClass: "h-[350px]"
+    },
+    {
+      category: "training",
+      title: "Quatre Elite Coaching Standards",
+      img: "/pt_standards.png",
       heightClass: "h-[300px]"
     },
     {
-      category: "supplements",
-      title: "FitLine Optimal Set Daily Core",
-      img: "/fitline_optimal_set.png",
+      category: "training",
+      title: "Weight Management & Nutrition Progress",
+      img: "/goal_weight_management.png",
       heightClass: "h-[400px]"
     },
     {
       category: "training",
-      title: "One-on-One Biomechanics Coaching",
-      img: "/GANTI_ORANGNYA_JADI_SINGAPOREAN_202606211917.jpeg",
-      heightClass: "h-[350px]"
-    },
-    {
-      category: "supplements",
-      title: "FitLine Basics Daily Foundation",
-      img: "/fitline_basics.png",
-      heightClass: "h-[300px]"
-    },
-    {
-      category: "supplements",
-      title: "FitLine Activize Oxyplus Booster",
-      img: "/fitline_activize.png",
+      title: "Longevity & Executive Health",
+      img: "/goal_longevity.png",
       heightClass: "h-[320px]"
     },
     {
-      category: "events",
-      title: "Singapore Mobile Fitness Sessions",
-      img: "/singapore_mobile_coaching.png",
+      category: "training",
+      title: "Confidential Coach Consultation",
+      img: "/contact_hero.png",
       heightClass: "h-[400px]"
-    },
-    {
-      category: "supplements",
-      title: "FitLine Restorate Night Recovery",
-      img: "/fitline_restorate.png",
-      heightClass: "h-[350px]"
     }
   ];
 
@@ -69,7 +54,7 @@ export default function GalleryPage() {
       {/* HERO BANNER */}
       <section className="relative h-[40vh] w-full flex items-center justify-center bg-black overflow-hidden">
         <Image
-          src="/2894346180.webp"
+          src="/pt_history.png"
           alt="Gallery Hero"
           fill
           priority

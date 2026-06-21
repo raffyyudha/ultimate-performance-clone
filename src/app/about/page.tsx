@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section className="relative h-[320px] md:h-[400px] w-full flex items-center justify-center bg-black overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
         <Image
-          src="/2894346180.webp"
+          src="/pt_history.png"
           alt="About D'Quatre Fitness Group"
           fill
           priority
@@ -69,7 +69,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[300px] md:h-[480px] w-full overflow-hidden rounded-[2.5rem] shadow-xl group border border-gray-100">
                 <Image
-                  src="/3506738022.webp"
+                  src="/goal_longevity.png"
                   alt="Premium wellness"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -85,7 +85,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[300px] md:h-[480px] w-full overflow-hidden rounded-[2.5rem] shadow-xl group border border-gray-100 order-2 md:order-1">
                 <Image
-                  src="/2895990328.avif"
+                  src="/pt_philosophy.png"
                   alt="Fitness philosophy"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -137,7 +137,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[300px] md:h-[480px] w-full overflow-hidden rounded-[2.5rem] shadow-xl group border border-gray-100">
                 <Image
-                  src="/4122906706.avif"
+                  src="/contact_hero.png"
                   alt="D'Quatre system"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -205,7 +205,7 @@ export default function AboutPage() {
               </div>
               <div className="relative h-[300px] md:h-[480px] w-full overflow-hidden rounded-[2.5rem] shadow-xl group border border-gray-100">
                 <Image
-                  src="/2894346180.webp"
+                  src="/pt_history.png"
                   alt="D'Quatre History"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -221,7 +221,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[300px] md:h-[480px] w-full overflow-hidden rounded-[2.5rem] shadow-xl group border border-gray-100 order-2 md:order-1">
                 <Image
-                  src="/3506738022.webp"
+                  src="/goal_longevity.png"
                   alt="Corporate Wellness Press"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"

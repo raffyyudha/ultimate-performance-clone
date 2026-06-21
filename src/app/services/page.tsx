@@ -86,7 +86,7 @@ export default function ServicesPage() {
       {/* SECTION 1: HERO BANNER */}
       <section className="relative h-[480px] w-full flex items-center justify-center bg-black overflow-hidden">
         <Image
-          src="/4122906706.avif"
+          src="/contact_hero.png"
           alt="Personal Training Hero"
           fill
           priority
@@ -565,7 +565,7 @@ export default function ServicesPage() {
           </div>
           <div className="relative h-[400px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-lg border border-gray-100">
             <Image
-              src="/4100845651.webp"
+              src="/goal_weight_management.png"
               alt="D'Quatre Training App"
               fill
               className="object-cover"
