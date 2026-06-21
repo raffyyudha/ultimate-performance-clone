@@ -119,7 +119,7 @@ export default function ServicesPage() {
           <div className="md:col-span-4 flex justify-start md:justify-end">
             <Link
               href="/contact"
-              className="bg-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-[#1B365D] transition-colors duration-300 text-xs shadow-md inline-block text-center whitespace-nowrap"
+              className="bg-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 text-xs shadow-md inline-block text-center whitespace-nowrap"
             >
               ENQUIRE NOW
             </Link>
@@ -143,7 +143,7 @@ export default function ServicesPage() {
           {/* Card 1 */}
           <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
@@ -158,7 +158,7 @@ export default function ServicesPage() {
           {/* Card 2 */}
           <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
@@ -173,7 +173,7 @@ export default function ServicesPage() {
           {/* Card 3 */}
           <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
                 </svg>
@@ -188,7 +188,7 @@ export default function ServicesPage() {
           {/* Card 4 */}
           <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
@@ -203,7 +203,7 @@ export default function ServicesPage() {
           {/* Card 5 */}
           <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                 </svg>
@@ -218,7 +218,7 @@ export default function ServicesPage() {
           {/* Card 6 */}
           <div className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
@@ -246,7 +246,7 @@ export default function ServicesPage() {
         <div className="max-w-3xl mx-auto px-6 mt-16 space-y-12">
           {/* Step 1 */}
           <div className="flex gap-6 items-start relative pb-6 border-l border-dashed border-gray-200 pl-6 ml-4">
-            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1B365D] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1B365D]">
+            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1E00FA] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1E00FA]">
               1
             </div>
             <div className="space-y-2">
@@ -259,7 +259,7 @@ export default function ServicesPage() {
 
           {/* Step 2 */}
           <div className="flex gap-6 items-start relative pb-6 border-l border-dashed border-gray-200 pl-6 ml-4">
-            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1B365D] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1B365D]">
+            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1E00FA] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1E00FA]">
               2
             </div>
             <div className="space-y-2">
@@ -272,7 +272,7 @@ export default function ServicesPage() {
 
           {/* Step 3 */}
           <div className="flex gap-6 items-start relative pb-6 border-l border-dashed border-gray-200 pl-6 ml-4">
-            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1B365D] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1B365D]">
+            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1E00FA] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1E00FA]">
               3
             </div>
             <div className="space-y-2">
@@ -285,7 +285,7 @@ export default function ServicesPage() {
 
           {/* Step 4 */}
           <div className="flex gap-6 items-start relative pb-6 border-l border-dashed border-gray-200 pl-6 ml-4">
-            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1B365D] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1B365D]">
+            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1E00FA] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1E00FA]">
               4
             </div>
             <div className="space-y-2">
@@ -298,7 +298,7 @@ export default function ServicesPage() {
 
           {/* Step 5 */}
           <div className="flex gap-6 items-start relative pl-6 ml-4">
-            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1B365D] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1B365D]">
+            <div className="absolute -left-[17px] top-0 bg-white border-2 border-[#1E00FA] w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-[#1E00FA]">
               5
             </div>
             <div className="space-y-2">
@@ -314,7 +314,7 @@ export default function ServicesPage() {
         <div className="text-center mt-16">
           <Link
             href="/contact"
-            className="bg-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-[#1B365D] transition-colors duration-300 text-xs shadow-md inline-block"
+            className="bg-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 text-xs shadow-md inline-block"
           >
             ENQUIRE NOW
           </Link>
@@ -356,7 +356,7 @@ export default function ServicesPage() {
               </div>
               <div className="p-5 space-y-2">
                 <h4 className="font-bold text-base text-black">Susan</h4>
-                <p className="text-[#1B365D] text-xs font-bold uppercase tracking-wider">Lost 21kg & 18% body fat</p>
+                <p className="text-[#1E00FA] text-xs font-bold uppercase tracking-wider">Lost 21kg & 18% body fat</p>
                 <p className="text-gray-400 text-[11px] font-semibold">TIMELINE: 12 WEEKS</p>
               </div>
             </div>
@@ -373,7 +373,7 @@ export default function ServicesPage() {
               </div>
               <div className="p-5 space-y-2">
                 <h4 className="font-bold text-base text-black">Roy</h4>
-                <p className="text-[#1B365D] text-xs font-bold uppercase tracking-wider">40kg loss & muscle gain</p>
+                <p className="text-[#1E00FA] text-xs font-bold uppercase tracking-wider">40kg loss & muscle gain</p>
                 <p className="text-gray-400 text-[11px] font-semibold">TIMELINE: 24 WEEKS</p>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function ServicesPage() {
               </div>
               <div className="p-5 space-y-2">
                 <h4 className="font-bold text-base text-black">Zrinka</h4>
-                <p className="text-[#1B365D] text-xs font-bold uppercase tracking-wider">53kg weight loss & toning</p>
+                <p className="text-[#1E00FA] text-xs font-bold uppercase tracking-wider">53kg weight loss & toning</p>
                 <p className="text-gray-400 text-[11px] font-semibold">TIMELINE: 36 WEEKS</p>
               </div>
             </div>
@@ -407,7 +407,7 @@ export default function ServicesPage() {
               </div>
               <div className="p-5 space-y-2">
                 <h4 className="font-bold text-base text-black">Sarah</h4>
-                <p className="text-[#1B365D] text-xs font-bold uppercase tracking-wider">Lost 14kg & improved posture</p>
+                <p className="text-[#1E00FA] text-xs font-bold uppercase tracking-wider">Lost 14kg & improved posture</p>
                 <p className="text-gray-400 text-[11px] font-semibold">TIMELINE: 12 WEEKS</p>
               </div>
             </div>
@@ -431,13 +431,13 @@ export default function ServicesPage() {
           {/* Metric 1 */}
           <div className="bg-[#F5F5F7] p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
               <div className="space-y-1">
-                <p className="text-3xl md:text-4xl font-extrabold text-[#1B365D]">92.6%</p>
+                <p className="text-3xl md:text-4xl font-extrabold text-[#1E00FA]">92.6%</p>
                 <h4 className="font-bold text-sm text-black">Increase in strength</h4>
               </div>
               <p className="text-gray-500 text-xs leading-relaxed">
@@ -449,13 +449,13 @@ export default function ServicesPage() {
           {/* Metric 2 */}
           <div className="bg-[#F5F5F7] p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <div className="space-y-1">
-                <p className="text-3xl md:text-4xl font-extrabold text-[#1B365D]">8.6kg</p>
+                <p className="text-3xl md:text-4xl font-extrabold text-[#1E00FA]">8.6kg</p>
                 <h4 className="font-bold text-sm text-black">Average weight loss</h4>
               </div>
               <p className="text-gray-500 text-xs leading-relaxed">
@@ -467,13 +467,13 @@ export default function ServicesPage() {
           {/* Metric 3 */}
           <div className="bg-[#F5F5F7] p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
               <div className="space-y-1">
-                <p className="text-3xl md:text-4xl font-extrabold text-[#1B365D]">-20.7mmHg</p>
+                <p className="text-3xl md:text-4xl font-extrabold text-[#1E00FA]">-20.7mmHg</p>
                 <h4 className="font-bold text-sm text-black">Blood pressure reduction</h4>
               </div>
               <p className="text-gray-500 text-xs leading-relaxed">
@@ -485,13 +485,13 @@ export default function ServicesPage() {
           {/* Metric 4 */}
           <div className="bg-[#F5F5F7] p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
               <div className="space-y-1">
-                <p className="text-3xl md:text-4xl font-extrabold text-[#1B365D]">+41%</p>
+                <p className="text-3xl md:text-4xl font-extrabold text-[#1E00FA]">+41%</p>
                 <h4 className="font-bold text-sm text-black">Sex drive increase</h4>
               </div>
               <p className="text-gray-500 text-xs leading-relaxed">
@@ -503,13 +503,13 @@ export default function ServicesPage() {
           {/* Metric 5 */}
           <div className="bg-[#F5F5F7] p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <div className="space-y-1">
-                <p className="text-3xl md:text-4xl font-extrabold text-[#1B365D]">+29%</p>
+                <p className="text-3xl md:text-4xl font-extrabold text-[#1E00FA]">+29%</p>
                 <h4 className="font-bold text-sm text-black">Mood improvement</h4>
               </div>
               <p className="text-gray-500 text-xs leading-relaxed">
@@ -521,13 +521,13 @@ export default function ServicesPage() {
           {/* Metric 6 */}
           <div className="bg-[#F5F5F7] p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
             <div className="space-y-4">
-              <div className="text-[#1B365D] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+              <div className="text-[#1E00FA] w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5a2 2 0 10-2 2h2z" />
                 </svg>
               </div>
               <div className="space-y-1">
-                <p className="text-3xl md:text-4xl font-extrabold text-[#1B365D]">91%</p>
+                <p className="text-3xl md:text-4xl font-extrabold text-[#1E00FA]">91%</p>
                 <h4 className="font-bold text-sm text-black">Maintain results long-term</h4>
               </div>
               <p className="text-gray-500 text-xs leading-relaxed">
@@ -548,7 +548,7 @@ export default function ServicesPage() {
       <section className="bg-white py-20 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <span className="bg-[#1B365D] text-white px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full">
+            <span className="bg-[#1E00FA] text-white px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full">
               THE D'QUATRE TRANSFORM APP
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
@@ -619,7 +619,7 @@ export default function ServicesPage() {
                 <div className="pt-4">
                   <Link
                     href={doubtsSlides[activeSlide].link}
-                    className="bg-black text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-wider hover:bg-[#1B365D] transition-colors duration-300 shadow-sm inline-block"
+                    className="bg-black text-white px-8 py-3 rounded-full text-[11px] font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 shadow-sm inline-block"
                   >
                     READ {doubtsSlides[activeSlide].name}
                   </Link>

@@ -6,7 +6,7 @@
 
 :root {
   --cream: #F5F5F7;
-  --maroon: #1B365D;
+  --maroon: #1E00FA;
   --black: #0B0B0B;
 }
 
@@ -37,11 +37,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-outline {
-  @apply border border-black px-6 py-3 text-sm tracking-wide hover:bg-black hover:text-white transition-all;
+  @apply border px-6 py-3 text-sm tracking-wide transition-all;
+  border-color: var(--maroon);
+  color: var(--maroon);
+}
+
+.btn-outline:hover {
+  background-color: var(--maroon);
+  color: white;
 }
 
 .btn-primary {
-  @apply bg-black text-white px-6 py-3 text-sm tracking-wide hover:bg-gray-800 transition-all;
+  @apply text-white px-6 py-3 text-sm tracking-wide transition-all;
+  background-color: var(--maroon);
+}
+
+.btn-primary:hover {
+  background-color: black;
 }
 
 @layer utilities {

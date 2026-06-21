@@ -260,7 +260,7 @@ export default function CalculatorPage() {
           className="object-cover opacity-45 filter grayscale"
         />
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto space-y-3">
-          <p className="text-xs text-[#1B365D] font-bold uppercase tracking-[0.25em]">DATA-DRIVEN FITNESS ECOSYSTEM</p>
+          <p className="text-xs text-[#1E00FA] font-bold uppercase tracking-[0.25em]">DATA-DRIVEN FITNESS ECOSYSTEM</p>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
             Fitness & Nutrition Calculators
           </h1>
@@ -292,7 +292,7 @@ export default function CalculatorPage() {
                           : "bg-[#F5F5F7] border-gray-200 text-gray-600 hover:border-black hover:text-black hover:scale-[1.01]"
                       }`}
                     >
-                      <div className={`mb-1.5 transition-colors ${isActive ? "text-[#1B365D]" : "text-gray-400"}`}>
+                      <div className={`mb-1.5 transition-colors ${isActive ? "text-[#1E00FA]" : "text-gray-400"}`}>
                         {tab.icon}
                       </div>
                       <span className="text-[10px] font-extrabold uppercase tracking-wider leading-none">
@@ -306,7 +306,7 @@ export default function CalculatorPage() {
 
             {/* CONDITIONAL DYNAMIC INPUTS PANEL */}
             <div className="border-t border-gray-100 pt-6 space-y-5">
-              <h3 className="text-xs font-bold text-black uppercase tracking-widest text-[#1B365D] pb-1 border-b border-gray-100">
+              <h3 className="text-xs font-bold text-black uppercase tracking-widest text-[#1E00FA] pb-1 border-b border-gray-100">
                 Input Metrics
               </h3>
 
@@ -319,7 +319,7 @@ export default function CalculatorPage() {
                       type="number"
                       value={weight}
                       onChange={(e) => setWeight(Math.max(10, parseInt(e.target.value) || 0))}
-                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all font-semibold"
+                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
                 )}
@@ -332,7 +332,7 @@ export default function CalculatorPage() {
                       type="number"
                       value={height}
                       onChange={(e) => setHeight(Math.max(50, parseInt(e.target.value) || 0))}
-                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all font-semibold"
+                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
                 )}
@@ -345,7 +345,7 @@ export default function CalculatorPage() {
                       type="number"
                       value={age}
                       onChange={(e) => setAge(Math.max(1, parseInt(e.target.value) || 0))}
-                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all font-semibold"
+                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
                 )}
@@ -358,7 +358,7 @@ export default function CalculatorPage() {
                       type="number"
                       value={rhr}
                       onChange={(e) => setRhr(Math.max(30, parseInt(e.target.value) || 0))}
-                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all font-semibold"
+                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
                 )}
@@ -371,7 +371,7 @@ export default function CalculatorPage() {
                       type="number"
                       value={exercise}
                       onChange={(e) => setExercise(Math.max(0, parseInt(e.target.value) || 0))}
-                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all font-semibold"
+                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
                 )}
@@ -384,7 +384,7 @@ export default function CalculatorPage() {
                       type="number"
                       value={liftWeight}
                       onChange={(e) => setLiftWeight(Math.max(1, parseInt(e.target.value) || 0))}
-                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all font-semibold"
+                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
                 )}
@@ -397,7 +397,7 @@ export default function CalculatorPage() {
                       type="number"
                       value={reps}
                       onChange={(e) => setReps(Math.max(1, parseInt(e.target.value) || 0))}
-                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all font-semibold"
+                      className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
                 )}
@@ -412,7 +412,7 @@ export default function CalculatorPage() {
                         onClick={() => setGender("male")}
                         className={`flex-1 p-3 text-xs font-bold border rounded-xl uppercase tracking-wider transition-all ${
                           gender === "male"
-                            ? "border-[#1B365D] bg-[#1B365D]/5 text-[#1B365D]"
+                            ? "border-[#1E00FA] bg-[#1E00FA]/5 text-[#1E00FA]"
                             : "border-gray-200 text-gray-500 hover:border-black"
                         }`}
                       >
@@ -423,7 +423,7 @@ export default function CalculatorPage() {
                         onClick={() => setGender("female")}
                         className={`flex-1 p-3 text-xs font-bold border rounded-xl uppercase tracking-wider transition-all ${
                           gender === "female"
-                            ? "border-[#1B365D] bg-[#1B365D]/5 text-[#1B365D]"
+                            ? "border-[#1E00FA] bg-[#1E00FA]/5 text-[#1E00FA]"
                             : "border-gray-200 text-gray-500 hover:border-black"
                         }`}
                       >
@@ -437,7 +437,7 @@ export default function CalculatorPage() {
               {/* Waist, Neck, Hip Circumferences (Body Fat % / WHR) */}
               {(showNeck || showWaist || showHip) && (
                 <div className="space-y-4 pt-4 border-t border-gray-100">
-                  <h4 className="text-xs font-bold text-[#1B365D] uppercase tracking-widest">Circumferences</h4>
+                  <h4 className="text-xs font-bold text-[#1E00FA] uppercase tracking-widest">Circumferences</h4>
                   <div className="grid grid-cols-3 gap-3">
                     {showNeck && (
                       <div>
@@ -446,7 +446,7 @@ export default function CalculatorPage() {
                           type="number"
                           value={neck}
                           onChange={(e) => setNeck(Math.max(10, parseInt(e.target.value) || 0))}
-                          className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1B365D] font-semibold text-center"
+                          className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1E00FA] font-semibold text-center"
                         />
                       </div>
                     )}
@@ -457,7 +457,7 @@ export default function CalculatorPage() {
                           type="number"
                           value={waist}
                           onChange={(e) => setWaist(Math.max(10, parseInt(e.target.value) || 0))}
-                          className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1B365D] font-semibold text-center"
+                          className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1E00FA] font-semibold text-center"
                         />
                       </div>
                     )}
@@ -468,7 +468,7 @@ export default function CalculatorPage() {
                           type="number"
                           value={hip}
                           onChange={(e) => setHip(Math.max(10, parseInt(e.target.value) || 0))}
-                          className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1B365D] font-semibold text-center"
+                          className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1E00FA] font-semibold text-center"
                         />
                       </div>
                     )}
@@ -483,7 +483,7 @@ export default function CalculatorPage() {
                   <select
                     value={activity}
                     onChange={(e) => setActivity(parseFloat(e.target.value))}
-                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none bg-white cursor-pointer transition-colors focus:border-[#1B365D] font-semibold"
+                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none bg-white cursor-pointer transition-colors focus:border-[#1E00FA] font-semibold"
                   >
                     <option value={1.2}>Sedentary (Little to no daily movement)</option>
                     <option value={1.375}>Lightly Active (Training 1-3 times/week)</option>
@@ -510,7 +510,7 @@ export default function CalculatorPage() {
                         onClick={() => setGoal(g.id as "loss" | "maintain" | "gain")}
                         className={`p-3 text-xs font-bold border rounded-xl uppercase tracking-wider transition-all text-center ${
                           goal === g.id
-                            ? "border-[#1B365D] bg-[#1B365D]/5 text-[#1B365D]"
+                            ? "border-[#1E00FA] bg-[#1E00FA]/5 text-[#1E00FA]"
                             : "border-gray-200 text-gray-500 hover:border-black"
                         }`}
                       >
@@ -534,10 +534,10 @@ export default function CalculatorPage() {
           
           <div className="space-y-8">
             <div className="border-b border-white/10 pb-4 flex justify-between items-center">
-              <h3 className="text-sm font-bold uppercase tracking-widest text-[#1B365D]">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-[#1E00FA]">
                 Live Results Dashboard
               </h3>
-              <span className="text-[9px] bg-[#1B365D] text-white font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              <span className="text-[9px] bg-[#1E00FA] text-white font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">
                 D'Quatre Analytics
               </span>
             </div>
@@ -601,7 +601,7 @@ export default function CalculatorPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                     <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Hourly Energy Burn</p>
-                    <p className="text-2xl font-bold mt-1 text-[#1B365D]">{(bmr / 24).toFixed(1)} <span className="text-xs text-white">kcal</span></p>
+                    <p className="text-2xl font-bold mt-1 text-[#1E00FA]">{(bmr / 24).toFixed(1)} <span className="text-xs text-white">kcal</span></p>
                   </div>
                   <div className="bg-white/5 border border-white/10 p-5 rounded-2xl">
                     <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Formula Applied</p>
@@ -627,22 +627,22 @@ export default function CalculatorPage() {
                     <p className="text-2xl font-bold mt-1 text-gray-300">{tdee} kcal</p>
                   </div>
                   <div>
-                    <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider text-[#1B365D]">Daily Target Calories</p>
-                    <p className="text-3xl font-extrabold mt-1 text-[#1B365D]">{targetCalories} kcal</p>
+                    <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider text-[#1E00FA]">Daily Target Calories</p>
+                    <p className="text-3xl font-extrabold mt-1 text-[#1E00FA]">{targetCalories} kcal</p>
                   </div>
                 </div>
 
                 <div className="space-y-4 bg-white/5 border border-white/10 p-5 rounded-2xl">
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#1B365D]">Target Daily Macronutrients</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#1E00FA]">Target Daily Macronutrients</h4>
                   
                   {/* Protein */}
                   <div className="space-y-1.5">
                     <div className="flex justify-between text-xs font-semibold">
                       <span>Protein (Muscle synthesis)</span>
-                      <span className="font-bold text-[#1B365D]">{macros.protein}g ({macros.protein * 4} kcal)</span>
+                      <span className="font-bold text-[#1E00FA]">{macros.protein}g ({macros.protein * 4} kcal)</span>
                     </div>
                     <div className="w-full bg-white/10 h-2.5 rounded-full overflow-hidden">
-                      <div className="h-full bg-[#1B365D]" style={{ width: `${goal === "loss" ? 40 : 30}%` }}></div>
+                      <div className="h-full bg-[#1E00FA]" style={{ width: `${goal === "loss" ? 40 : 30}%` }}></div>
                     </div>
                   </div>
 
@@ -676,7 +676,7 @@ export default function CalculatorPage() {
               <div className="space-y-6 animate-fadeIn">
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">Estimated Body Fat Percentage</p>
-                  <p className="text-6xl md:text-7xl font-extrabold mt-2 tracking-tight text-[#1B365D]">
+                  <p className="text-6xl md:text-7xl font-extrabold mt-2 tracking-tight text-[#1E00FA]">
                     {bodyFat}%
                   </p>
                 </div>
@@ -709,7 +709,7 @@ export default function CalculatorPage() {
               <div className="space-y-6 animate-fadeIn">
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">Ideal Body Weight (IBW)</p>
-                  <p className="text-6xl md:text-7xl font-extrabold mt-2 tracking-tight text-[#1B365D]">
+                  <p className="text-6xl md:text-7xl font-extrabold mt-2 tracking-tight text-[#1E00FA]">
                     {idealWeight} <span className="text-2xl font-bold text-gray-400 uppercase">kg</span>
                   </p>
                 </div>
@@ -757,13 +757,13 @@ export default function CalculatorPage() {
               <div className="space-y-6 animate-fadeIn">
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">Estimated One-Rep Max (1RM)</p>
-                  <p className="text-5xl md:text-6xl font-extrabold mt-2 tracking-tight text-[#1B365D]">
+                  <p className="text-5xl md:text-6xl font-extrabold mt-2 tracking-tight text-[#1E00FA]">
                     {oneRepMax} <span className="text-xl font-bold text-gray-400 uppercase">kg</span>
                   </p>
                 </div>
 
                 <div className="bg-white/5 border border-white/10 p-5 rounded-2xl space-y-3">
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#1B365D] mb-1">Sub-Maximal Load Projections</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#1E00FA] mb-1">Sub-Maximal Load Projections</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-gray-400">
                     {repMaxes.map((item) => (
                       <div key={item.reps} className="flex justify-between border-b border-white/5 pb-1">
@@ -786,12 +786,12 @@ export default function CalculatorPage() {
                   </div>
                   <div>
                     <p className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">Heart Rate Reserve (HRR)</p>
-                    <p className="text-xl font-bold mt-0.5 text-[#1B365D]">{hrr} bpm</p>
+                    <p className="text-xl font-bold mt-0.5 text-[#1E00FA]">{hrr} bpm</p>
                   </div>
                 </div>
 
                 <div className="space-y-2.5">
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#1B365D]">Karvonen Training Zones</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#1E00FA]">Karvonen Training Zones</h4>
                   <div className="space-y-2">
                     {thrZones.map((zone) => (
                       <div key={zone.zone} className={`p-3.5 border rounded-xl flex items-center justify-between transition-all ${zone.color}`}>
@@ -815,7 +815,7 @@ export default function CalculatorPage() {
               <div className="space-y-6 animate-fadeIn">
                 <div>
                   <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">Daily Hydration Target</p>
-                  <p className="text-6xl md:text-7xl font-extrabold mt-2 tracking-tight text-[#1B365D]">
+                  <p className="text-6xl md:text-7xl font-extrabold mt-2 tracking-tight text-[#1E00FA]">
                     {totalWater} <span className="text-2xl font-bold text-gray-400 uppercase">Liters</span>
                   </p>
                 </div>
@@ -862,7 +862,7 @@ export default function CalculatorPage() {
           <div className="pt-6 border-t border-white/10 mt-8">
             <Link
               href="/contact"
-              className="bg-white text-black hover:bg-[#1B365D] hover:text-white transition-all py-4 text-center rounded-full text-xs font-bold uppercase tracking-widest block shadow-md scale-100 hover:scale-[1.01] active:scale-[0.99]"
+              className="bg-white text-black hover:bg-[#1E00FA] hover:text-white transition-all py-4 text-center rounded-full text-xs font-bold uppercase tracking-widest block shadow-md scale-100 hover:scale-[1.01] active:scale-[0.99]"
             >
               Request Customized Programming
             </Link>

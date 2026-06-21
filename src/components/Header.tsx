@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -12,7 +13,7 @@ export default function Header() {
 
   const navLinks = [
     { label: "PERSONAL TRAINING", href: "/services" },
-    { label: "WHY D'QUATRE", href: "/about" },
+    { label: "WHY QUATRE", href: "/about" },
     { label: "CLIENT RESULTS", href: "/results" },
     { label: "TRAINERS", href: "/trainers" },
     { label: "QUATRE MERCH", href: "/merch" },
@@ -31,13 +32,20 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center group relative z-50" onClick={() => setMobileMenu(false)}>
+        <Link href="/" className="flex items-center gap-2 group relative z-50" onClick={() => setMobileMenu(false)}>
+          <Image
+            src="/logoquatre.png"
+            alt="Quatre Logo"
+            width={32}
+            height={32}
+            className={`object-contain transition-all duration-300 ${mobileMenu ? "brightness-0 invert" : ""}`}
+          />
           <span
             className={`font-sans font-black text-xl tracking-[0.2em] transition-colors duration-300 ${
               mobileMenu ? "text-white" : "text-black"
             }`}
           >
-            D’QUATRE<span className="text-maroon">.</span>
+            QUATRE<span className="text-maroon">.</span>
           </span>
         </Link>
 
@@ -62,7 +70,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center">
           <Link
             href="/contact"
-            className="border border-black text-black hover:bg-maroon hover:border-maroon hover:text-white transition-all text-[10.5px] tracking-[0.2em] font-extrabold px-6 py-2.5 duration-300 uppercase rounded-none"
+            className="bg-maroon border border-maroon text-white hover:bg-black hover:border-black transition-all text-[10.5px] tracking-[0.2em] font-extrabold px-6 py-2.5 duration-300 uppercase rounded-none"
           >
             ENQUIRE NOW
           </Link>
@@ -116,19 +124,19 @@ export default function Header() {
           <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-4">
             <Link
               href="/contact"
-              className="bg-white text-black text-center py-3.5 text-[11px] font-extrabold tracking-[0.2em] hover:bg-maroon hover:text-white transition-all uppercase rounded-none"
+              className="bg-maroon text-white text-center py-3.5 text-[11px] font-extrabold tracking-[0.2em] hover:bg-white hover:text-black transition-all uppercase rounded-none"
               onClick={() => setMobileMenu(false)}
             >
               ENQUIRE NOW
             </Link>
             <div className="flex flex-col gap-1 text-center text-xs text-gray-400">
               <p className="font-black text-white tracking-widest text-[9px] uppercase">
-                D'QUATRE FITNESS GROUP
+                QUATRE FITNESS
               </p>
               <a href="https://wa.me/6581379850" className="hover:text-maroon transition-colors font-semibold text-[10px]">
                 WhatsApp: +65 8137 9850
               </a>
-              <p className="text-[9px] text-gray-600">© 2026 D'Quatre Fitness Group. Singapore.</p>
+              <p className="text-[9px] text-gray-600">© 2026 D'Quatre Fitness Group Pte Ltd.</p>
             </div>
           </div>
         </div>

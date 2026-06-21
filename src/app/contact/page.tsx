@@ -70,7 +70,7 @@ export default function ContactPage() {
           className="object-cover opacity-50 filter grayscale"
         />
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto space-y-3 animate-fadeIn">
-          <p className="text-xs text-[#1B365D] font-bold uppercase tracking-[0.25em]">START YOUR TRANSFORMATION</p>
+          <p className="text-xs text-[#1E00FA] font-bold uppercase tracking-[0.25em]">START YOUR TRANSFORMATION</p>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
             Begin Your Journey
           </h1>
@@ -86,7 +86,7 @@ export default function ContactPage() {
         {/* INFO COLUMN */}
         <div className="lg:col-span-5 space-y-8">
           <div className="space-y-4">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-[0.2em] block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-[0.2em] block">
               GET IN TOUCH
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-black leading-tight">
@@ -123,7 +123,7 @@ export default function ContactPage() {
 
             {/* Email Card */}
             <div className="bg-white p-6 rounded-2xl border border-gray-100 flex gap-4 hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 bg-[#1B365D]/5 text-[#1B365D] rounded-xl flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-[#1E00FA]/5 text-[#1E00FA] rounded-xl flex items-center justify-center shrink-0">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -141,7 +141,7 @@ export default function ContactPage() {
         <div className="lg:col-span-7">
           {submitted ? (
             <div className="bg-white p-10 rounded-[2rem] shadow-md border border-gray-100 text-center space-y-6 animate-fadeIn">
-              <div className="w-16 h-16 bg-[#1B365D] text-white rounded-full flex items-center justify-center mx-auto shadow-md">
+              <div className="w-16 h-16 bg-[#1E00FA] text-white rounded-full flex items-center justify-center mx-auto shadow-md">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                 </svg>
@@ -170,7 +170,7 @@ export default function ContactPage() {
               <div>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#1B365D] transition-colors"
+                  className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#1E00FA] transition-colors"
                 >
                   Submit Another Request
                 </button>
@@ -188,7 +188,7 @@ export default function ContactPage() {
                     value={formData.firstName}
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                     placeholder="Enter first name"
-                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none font-semibold focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all"
+                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none font-semibold focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all"
                   />
                 </div>
                 <div>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                     placeholder="Enter last name"
-                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none font-semibold focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all"
+                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none font-semibold focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all"
                   />
                 </div>
               </div>
@@ -212,7 +212,7 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="name@email.com"
-                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none font-semibold focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all"
+                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none font-semibold focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all"
                   />
                 </div>
                 <div>
@@ -223,7 +223,7 @@ export default function ContactPage() {
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="+65 8137 9850"
-                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none font-semibold focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all"
+                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none font-semibold focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all"
                   />
                 </div>
               </div>
@@ -234,7 +234,7 @@ export default function ContactPage() {
                   <select
                     value={formData.location}
                     onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none bg-white cursor-pointer font-semibold focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all"
+                    className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none bg-white cursor-pointer font-semibold focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all"
                   >
                     {locations.map((loc) => (
                       <option key={loc} value={loc}>
@@ -254,7 +254,7 @@ export default function ContactPage() {
                         onClick={() => setFormData({ ...formData, gender: g })}
                         className={`flex-1 p-3.5 text-xs font-bold border rounded-xl uppercase tracking-wider transition-all ${
                           formData.gender === g
-                            ? "border-[#1B365D] bg-[#1B365D]/5 text-[#1B365D]"
+                            ? "border-[#1E00FA] bg-[#1E00FA]/5 text-[#1E00FA]"
                             : "border-gray-200 text-gray-500 hover:border-black"
                         }`}
                       >
@@ -295,13 +295,13 @@ export default function ContactPage() {
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                   placeholder="Details regarding your preferred schedule, gym facilities, or training history..."
-                  className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none resize-none font-semibold focus:border-[#1B365D] focus:ring-1 focus:ring-[#1B365D] transition-all"
+                  className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none resize-none font-semibold focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-black text-white hover:bg-[#1B365D] py-4 rounded-full font-bold uppercase tracking-widest transition-all text-xs shadow-lg hover:scale-[1.01] active:scale-[0.99]"
+                className="w-full bg-black text-white hover:bg-[#1E00FA] py-4 rounded-full font-bold uppercase tracking-widest transition-all text-xs shadow-lg hover:scale-[1.01] active:scale-[0.99]"
               >
                 Submit Consultation Request
               </button>

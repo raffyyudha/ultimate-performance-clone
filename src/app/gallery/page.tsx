@@ -36,9 +36,15 @@ export default function GalleryPage() {
     },
     {
       category: "supplements",
-      title: "Morning Energy PowerCocktail",
-      img: "/fitline_powercocktail.png",
+      title: "FitLine Basics Daily Foundation",
+      img: "/fitline_basics.png",
       heightClass: "h-[300px]"
+    },
+    {
+      category: "supplements",
+      title: "FitLine Activize Oxyplus Booster",
+      img: "/fitline_activize.png",
+      heightClass: "h-[320px]"
     },
     {
       category: "events",
@@ -48,7 +54,7 @@ export default function GalleryPage() {
     },
     {
       category: "supplements",
-      title: "Nighttime Recovery Restorate",
+      title: "FitLine Restorate Night Recovery",
       img: "/fitline_restorate.png",
       heightClass: "h-[350px]"
     }
@@ -71,7 +77,7 @@ export default function GalleryPage() {
         />
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
-          <p className="text-xs text-[#1B365D] font-bold uppercase tracking-widest mb-3">VISUAL GALLERY</p>
+          <p className="text-xs text-[#1E00FA] font-bold uppercase tracking-widest mb-3">VISUAL GALLERY</p>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
             The D'Quatre Lifestyle
           </h1>
@@ -113,7 +119,7 @@ export default function GalleryPage() {
                 className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-95 group-hover:opacity-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 z-10">
-                <span className="text-[10px] font-bold text-[#1B365D] uppercase tracking-widest bg-white/95 px-2.5 py-1 rounded-md self-start mb-2">
+                <span className="text-[10px] font-bold text-[#1E00FA] uppercase tracking-widest bg-white/95 px-2.5 py-1 rounded-md self-start mb-2">
                   {categories.find((c) => c.id === item.category)?.label.split(" ")[0]}
                 </span>
                 <h3 className="text-base md:text-lg font-bold text-white leading-tight">
@@ -132,7 +138,7 @@ export default function GalleryPage() {
           onClick={() => setLightboxImage(null)}
         >
           <button
-            className="absolute top-6 right-6 text-white hover:text-[#1B365D] p-3 transition-colors bg-white/10 rounded-full focus:outline-none"
+            className="absolute top-6 right-6 text-white hover:text-[#1E00FA] p-3 transition-colors bg-white/10 rounded-full focus:outline-none"
             onClick={() => setLightboxImage(null)}
             aria-label="Close Lightbox"
           >

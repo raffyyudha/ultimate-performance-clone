@@ -51,7 +51,7 @@ export default function Home() {
           className="object-cover opacity-60"
         />
         <div className="relative z-20 max-w-7xl mx-auto px-4 py-20">
-          <p className="text-sm tracking-[0.2em] mb-4 font-semibold text-maroon">D'QUATRE FITNESS GROUP</p>
+          <p className="text-sm tracking-[0.2em] mb-4 font-semibold text-maroon">QUATRE FITNESS</p>
           <h1 className="font-sans text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">
             WE Shape<br />
             YOU Up!<br />
@@ -75,7 +75,7 @@ export default function Home() {
             Where fitness becomes<br />a lifestyle.
           </h2>
           <p className="text-gray-600 max-w-2xl leading-relaxed">
-            At D'Quatre, we believe fitness is not a short-term goal. It is a long-term lifestyle investment in health, performance, and confidence.
+            At Quatre, we believe fitness is not a short-term goal. It is a long-term lifestyle investment in health, performance, and confidence.
           </p>
         </div>
       </section>
@@ -84,7 +84,7 @@ export default function Home() {
       <section className="bg-maroon text-white py-20">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="text-xs border border-white/30 text-gray-300 px-3 py-1 rounded-full uppercase font-semibold">THE D'QUATRE WAY</span>
+            <span className="text-xs border border-white/30 text-gray-300 px-3 py-1 rounded-full uppercase font-semibold">THE QUATRE WAY</span>
             <h2 className="font-sans text-3xl md:text-4xl mb-6">
               <span className="text-red-300 italic">Refined ecosystem,</span><br />
               tailored to the individual.
@@ -123,8 +123,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 space-y-16">
           {/* Card 1: Home & Mobile PT */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] rounded-full overflow-hidden">
-              <Image src="/2895990328.avif" alt="Home & Mobile PT" fill className="object-cover" />
+            <div className="relative aspect-[2/3] w-full max-w-[340px] md:max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-100/60 bg-white">
+              <Image src="/WhatsApp Image 2026-06-19 at 10.29.03 PM (1).jpeg" alt="Home & Mobile PT" fill className="object-cover" />
             </div>
             <div>
               <span className="text-xs font-bold text-maroon uppercase tracking-widest">PILLAR 01</span>
@@ -142,15 +142,15 @@ export default function Home() {
               <p className="text-gray-600 mb-6">Our in-house premium apparel and lifestyle merchandise brand. Designed with minimalist aesthetics, exceptional comfort, and athletic performance in mind.</p>
               <a href="/merch" className="btn-outline inline-block">SHOP QUATRE MERCH</a>
             </div>
-            <div className="relative h-[400px] order-1 md:order-2">
-              <Image src="/1672286226.avif" alt="Quatre Merch" fill className="object-cover rounded-lg" />
+            <div className="relative aspect-[2/3] w-full max-w-[340px] md:max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-100/60 bg-white order-1 md:order-2">
+              <Image src="/WhatsApp Image 2026-06-19 at 10.42.50 PM.jpeg" alt="Quatre Merch" fill className="object-cover" />
             </div>
           </div>
 
           {/* Card 3: FitLine Supplements */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px]">
-              <Image src="/GANTI_ORANGNYA_JADI_SINGAPOREAN_202606211917.jpeg" alt="FitLine Nutrition" fill className="object-cover rounded-lg" />
+            <div className="relative aspect-[4/3] w-full max-w-[340px] md:max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-100/60 bg-white">
+              <Image src="/GANTI_ORANGNYA_JADI_SINGAPOREAN_202606211917.jpeg" alt="FitLine Nutrition" fill className="object-cover" />
             </div>
             <div>
               <span className="text-xs font-bold text-maroon uppercase tracking-widest">PILLAR 03</span>
@@ -168,8 +168,8 @@ export default function Home() {
               <p className="text-gray-600 mb-6">We curate corporate wellness programs, private fitness experiences, and education seminars to strengthen motivation, engagement, and team culture.</p>
               <a href="/services" className="btn-outline inline-block">DISCOVER WELLNESS EVENTS</a>
             </div>
-            <div className="relative h-[400px] order-1 md:order-2">
-              <Image src="/2909780049.webp" alt="Events" fill className="object-cover rounded-lg" />
+            <div className="relative aspect-[2/3] w-full max-w-[340px] md:max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-100/60 bg-white order-1 md:order-2">
+              <Image src="/WhatsApp Image 2026-06-19 at 10.29.03 PM (3).jpeg" alt="Events" fill className="object-cover" />
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@ export default function Home() {
             <div>
               <span className="text-sm border border-maroon text-maroon px-3 py-1 rounded-full">DESIGNED FOR RESULTS</span>
               <h2 className="font-sans text-4xl md:text-5xl font-bold mt-4">
-                WHATEVER YOUR GOAL,<br />D'QUATRE DELIVERS.
+                WHATEVER YOUR GOAL,<br />QUATRE DELIVERS.
               </h2>
               <p className="text-gray-600 mt-4">From weight management and muscle building to corporate performance and longevity.</p>
             </div>

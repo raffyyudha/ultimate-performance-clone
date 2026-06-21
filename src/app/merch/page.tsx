@@ -60,7 +60,7 @@ export default function QuatreMerchPage() {
           className="object-cover opacity-60 filter grayscale contrast-115 scale-102"
         />
         <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-12 w-full">
-          <p className="text-xs tracking-[0.2em] text-[#1B365D] font-bold mb-3 uppercase">QUATRE MERCH</p>
+          <p className="text-xs tracking-[0.2em] text-[#1E00FA] font-bold mb-3 uppercase">QUATRE MERCH</p>
           <h1 className="text-4xl md:text-6xl font-bold max-w-3xl leading-tight">
             Wear the Discipline.<br />
             <span className="italic text-red-100 font-normal">Live the Lifestyle.</span>
@@ -74,7 +74,7 @@ export default function QuatreMerchPage() {
       {/* PHILOSOPHY / OVERVIEW */}
       <section className="py-24 max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center">
         <div className="space-y-6">
-          <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+          <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
             DESIGN PHILOSOPHY
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
@@ -91,7 +91,7 @@ export default function QuatreMerchPage() {
           <div className="flex flex-wrap gap-4 pt-4">
             <a
               href="#collection"
-              className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1B365D] transition-colors duration-300 shadow-md"
+              className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 shadow-md"
             >
               Discover Collection
             </a>
@@ -117,7 +117,7 @@ export default function QuatreMerchPage() {
       <section id="collection" className="bg-white py-24 border-t border-b border-gray-100 scroll-mt-16">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               THE QUATRE COLLECTION
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
@@ -145,7 +145,7 @@ export default function QuatreMerchPage() {
                       <h3 className="text-lg font-bold text-black max-w-[70%] leading-tight">
                         {prod.title}
                       </h3>
-                      <span className="text-sm font-extrabold text-[#1B365D] whitespace-nowrap bg-[#1B365D]/5 px-2.5 py-1 rounded">
+                      <span className="text-sm font-extrabold text-[#1E00FA] whitespace-nowrap bg-[#1E00FA]/5 px-2.5 py-1 rounded">
                         {prod.price}
                       </span>
                     </div>
@@ -159,7 +159,7 @@ export default function QuatreMerchPage() {
                     href={`https://wa.me/6581379850?text=${encodeURIComponent(prod.waText)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-black text-white hover:bg-[#1B365D] text-center text-xs py-3.5 rounded-full font-bold uppercase tracking-wider block transition-colors shadow-sm flex items-center justify-center gap-2"
+                    className="w-full bg-black text-white hover:bg-[#1E00FA] text-center text-xs py-3.5 rounded-full font-bold uppercase tracking-wider block transition-colors shadow-sm flex items-center justify-center gap-2"
                   >
                     {/* WhatsApp Icon */}
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -178,7 +178,7 @@ export default function QuatreMerchPage() {
       <section className="bg-black text-white py-24">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               OUR VALUES
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
@@ -188,8 +188,8 @@ export default function QuatreMerchPage() {
 
           <div className="grid md:grid-cols-4 gap-8">
             {values.map((v) => (
-              <div key={v.title} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-[#1B365D] transition-all duration-300">
-                <h3 className="text-lg font-bold mb-3 text-white border-l-2 border-[#1B365D] pl-3">{v.title}</h3>
+              <div key={v.title} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-[#1E00FA] transition-all duration-300">
+                <h3 className="text-lg font-bold mb-3 text-white border-l-2 border-[#1E00FA] pl-3">{v.title}</h3>
                 <p className="text-gray-400 text-xs md:text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
@@ -200,7 +200,7 @@ export default function QuatreMerchPage() {
       {/* CO-BRANDING CTA */}
       <section className="bg-[#F5F5F7] py-24">
         <div className="max-w-4xl mx-auto px-6 text-center space-y-6">
-          <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+          <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
             TEAM WEAR & CO-BRANDING
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-black">
@@ -212,7 +212,7 @@ export default function QuatreMerchPage() {
           <div className="pt-4">
             <Link
               href="/contact"
-              className="bg-[#1B365D] text-white px-10 py-4 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-black transition-colors duration-300 shadow-md inline-block"
+              className="bg-[#1E00FA] text-white px-10 py-4 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-black transition-colors duration-300 shadow-md inline-block"
             >
               Contact Our Corporate Team
             </Link>

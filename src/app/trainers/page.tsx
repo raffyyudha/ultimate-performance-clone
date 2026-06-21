@@ -82,7 +82,7 @@ export default function TrainersPage() {
             <div className="pt-4">
               <Link
                 href="/contact"
-                className="bg-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-[#1B365D] transition-colors duration-300 text-xs shadow-md inline-block"
+                className="bg-black text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 text-xs shadow-md inline-block"
               >
                 GET STARTED
               </Link>
@@ -96,7 +96,7 @@ export default function TrainersPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-12 gap-12 items-center">
           {/* Left Column: Copy */}
           <div className="md:col-span-6 space-y-6 order-2 md:order-1">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               RIGOROUS RECRUITMENT
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
@@ -116,7 +116,7 @@ export default function TrainersPage() {
             <div className="pt-4">
               <Link
                 href="/services"
-                className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1B365D] transition-colors duration-300 shadow-sm inline-block"
+                className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 shadow-sm inline-block"
               >
                 SEE HOW OUR PERSONAL TRAINING WORKS
               </Link>
@@ -150,7 +150,7 @@ export default function TrainersPage() {
 
           {/* Right Column: Copy */}
           <div className="md:col-span-6 space-y-6 md:pl-6">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               RELENTLESS EDUCATION
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
@@ -170,7 +170,7 @@ export default function TrainersPage() {
             <div className="pt-4">
               <Link
                 href="/about"
-                className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1B365D] transition-colors duration-300 shadow-sm inline-block"
+                className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 shadow-sm inline-block"
               >
                 WHY THE D'QUATRE METHOD IS SO EFFECTIVE
               </Link>
@@ -184,7 +184,7 @@ export default function TrainersPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-12 gap-12 items-center">
           {/* Left Column: Copy */}
           <div className="md:col-span-6 space-y-6 order-2 md:order-1">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               FOCUS BY DESIGN
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
@@ -230,7 +230,7 @@ export default function TrainersPage() {
 
           {/* Right Column: Copy */}
           <div className="md:col-span-6 space-y-6 md:pl-6">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               ACCOUNTABILITY AT EVERY LEVEL
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
@@ -259,7 +259,7 @@ export default function TrainersPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-12 gap-12 items-center">
           {/* Left Column: Copy */}
           <div className="md:col-span-6 space-y-6 order-2 md:order-1">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               DATA + TECH ADVANTAGE
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight leading-tight">
@@ -293,7 +293,7 @@ export default function TrainersPage() {
             <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-xl max-w-[240px] text-xs border border-gray-100/50 space-y-3 animate-in fade-in slide-in-from-top-4 duration-500">
               <div className="flex justify-between items-center border-b border-gray-100 pb-2">
                 <span className="font-bold text-[#1a1a1a]">Client Metrics</span>
-                <span className="bg-[#1B365D] text-white text-[9px] font-bold px-1.5 py-0.5 rounded uppercase">LIVE</span>
+                <span className="bg-[#1E00FA] text-white text-[9px] font-bold px-1.5 py-0.5 rounded uppercase">LIVE</span>
               </div>
               <div className="space-y-1.5">
                 <div className="flex justify-between">
@@ -310,17 +310,17 @@ export default function TrainersPage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-500">Body Fat (BF%):</span>
-                  <span className="font-bold text-[#1B365D]">10.7%</span>
+                  <span className="font-bold text-[#1E00FA]">10.7%</span>
                 </div>
               </div>
               {/* Minimal Line Graph representation */}
               <div className="h-10 w-full flex items-end justify-between gap-1 pt-1">
-                <div className="bg-[#1B365D] w-full h-[80%] rounded-sm"></div>
-                <div className="bg-[#1B365D] w-full h-[72%] rounded-sm"></div>
-                <div className="bg-[#1B365D] w-full h-[65%] rounded-sm"></div>
-                <div className="bg-[#1B365D] w-full h-[58%] rounded-sm"></div>
-                <div className="bg-[#1B365D] w-full h-[45%] rounded-sm"></div>
-                <div className="bg-[#1B365D] w-full h-[32%] rounded-sm"></div>
+                <div className="bg-[#1E00FA] w-full h-[80%] rounded-sm"></div>
+                <div className="bg-[#1E00FA] w-full h-[72%] rounded-sm"></div>
+                <div className="bg-[#1E00FA] w-full h-[65%] rounded-sm"></div>
+                <div className="bg-[#1E00FA] w-full h-[58%] rounded-sm"></div>
+                <div className="bg-[#1E00FA] w-full h-[45%] rounded-sm"></div>
+                <div className="bg-[#1E00FA] w-full h-[32%] rounded-sm"></div>
               </div>
             </div>
           </div>

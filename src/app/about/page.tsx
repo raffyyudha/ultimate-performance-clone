@@ -22,7 +22,7 @@ export default function AboutPage() {
           className="object-cover opacity-50 filter grayscale"
         />
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto space-y-3 animate-fadeIn">
-          <p className="text-xs text-[#1B365D] font-bold uppercase tracking-[0.25em]">ESTABLISHED IN SINGAPORE</p>
+          <p className="text-xs text-[#1E00FA] font-bold uppercase tracking-[0.25em]">ESTABLISHED IN SINGAPORE</p>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
             About D'Quatre Fitness Group
           </h1>
@@ -35,11 +35,11 @@ export default function AboutPage() {
       {/* 2. CORE STATEMENT INTRO SECTION */}
       <section className="bg-white py-20 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-6 text-center space-y-6">
-          <p className="text-xs text-[#1B365D] font-bold uppercase tracking-[0.2em]">OUR PURPOSE</p>
+          <p className="text-xs text-[#1E00FA] font-bold uppercase tracking-[0.2em]">OUR PURPOSE</p>
           <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold text-black tracking-tight leading-tight">
             The premium lifestyle standard in fitness and wellness for Singapore.
           </h2>
-          <div className="w-16 h-1 bg-[#1B365D] mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-[#1E00FA] mx-auto rounded-full" />
           <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
             D'Quatre Fitness Group Pte Ltd is a Singapore-registered group established to deliver premium, accessible, and sustainable fitness and wellness solutions. We serve clients who value quality, discretion, flexibility, and long-term results.
           </p>
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <p className="text-xs font-bold text-[#1B365D] uppercase tracking-[0.2em]">PROVEN EXCELLENCE</p>
+                <p className="text-xs font-bold text-[#1E00FA] uppercase tracking-[0.2em]">PROVEN EXCELLENCE</p>
                 <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold text-black tracking-tight leading-tight">
                   Premium solutions.<br />Defined by lifestyle.
                 </h2>
@@ -92,7 +92,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="space-y-6 order-1 md:order-2 md:pl-12">
-                <p className="text-xs font-bold text-[#1B365D] uppercase tracking-[0.2em]">OUR PHILOSOPHY</p>
+                <p className="text-xs font-bold text-[#1E00FA] uppercase tracking-[0.2em]">OUR PHILOSOPHY</p>
                 <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold text-black tracking-tight leading-tight">
                   Lifestyles,<br />not quick fixes.
                 </h2>
@@ -114,7 +114,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <p className="text-xs font-bold text-[#1B365D] uppercase tracking-[0.2em]">OUR METHOD</p>
+                <p className="text-xs font-bold text-[#1E00FA] uppercase tracking-[0.2em]">OUR METHOD</p>
                 <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold text-black tracking-tight leading-tight">
                   The ecosystem we built to elevate lives.
                 </h2>
@@ -129,7 +129,7 @@ export default function AboutPage() {
                 <div className="pt-2">
                   <Link
                     href="/services"
-                    className="inline-block bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#1B365D] hover:scale-[1.01] active:scale-[0.99] transition-all duration-300"
+                    className="inline-block bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#1E00FA] hover:scale-[1.01] active:scale-[0.99] transition-all duration-300"
                   >
                     Explore Our Pillars
                   </Link>
@@ -160,7 +160,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="space-y-6 order-1 md:order-2 md:pl-12">
-                <p className="text-xs font-bold text-[#1B365D] uppercase tracking-[0.2em]">OUR COACHES</p>
+                <p className="text-xs font-bold text-[#1E00FA] uppercase tracking-[0.2em]">OUR COACHES</p>
                 <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold text-black tracking-tight leading-tight">
                   Bespoke guidance.<br />Absolute accountability.
                 </h2>
@@ -190,7 +190,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <p className="text-xs font-bold text-[#1B365D] uppercase tracking-[0.2em]">OUR HISTORY</p>
+                <p className="text-xs font-bold text-[#1E00FA] uppercase tracking-[0.2em]">OUR HISTORY</p>
                 <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold text-black tracking-tight leading-tight">
                   Singapore-born.<br />Refined lifestyle focus.
                 </h2>
@@ -228,7 +228,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="space-y-6 order-1 md:order-2 md:pl-12">
-                <p className="text-xs font-bold text-[#1B365D] uppercase tracking-[0.2em]">IN THE PRESS</p>
+                <p className="text-xs font-bold text-[#1E00FA] uppercase tracking-[0.2em]">IN THE PRESS</p>
                 <h2 className="font-sans text-3xl md:text-4xl lg:text-5xl font-extrabold text-black tracking-tight leading-tight">
                   The trusted authority in health and fitness.
                 </h2>
@@ -243,7 +243,7 @@ export default function AboutPage() {
                 <div className="pt-2">
                   <Link
                     href="/contact"
-                    className="inline-block bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#1B365D] hover:scale-[1.01] active:scale-[0.99] transition-all duration-300"
+                    className="inline-block bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-[#1E00FA] hover:scale-[1.01] active:scale-[0.99] transition-all duration-300"
                   >
                     Read Press Coverage
                   </Link>

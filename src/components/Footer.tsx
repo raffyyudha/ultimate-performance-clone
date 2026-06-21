@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -10,9 +11,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 mb-16">
           {/* Logo & Brand Col */}
           <div className="sm:col-span-2 md:col-span-1">
-            <Link href="/" className="inline-block group mb-6">
+            <Link href="/" className="flex items-center gap-2 group mb-6">
+              <Image
+                src="/logoquatre.png"
+                alt="Quatre Logo"
+                width={36}
+                height={36}
+                className="object-contain"
+              />
               <span className="font-sans font-black text-2xl tracking-[0.25em] text-white transition-colors">
-                D’QUATRE<span className="text-maroon">.</span>
+                QUATRE<span className="text-maroon">.</span>
               </span>
             </Link>
             <p className="text-xs text-gray-400 leading-relaxed mb-6">

@@ -6,34 +6,35 @@ import Link from "next/link";
 export default function FitLinePage() {
   const products = [
     {
-      name: "FitLine PowerCocktail",
-      tagline: "Your Daily Morning Boost",
-      focus: "Energy & Concentration",
-      desc: "An all-in-one morning drink designed to optimize cellular energy, support immune function, and improve digestive health. Formulated with key vitamins, fibers, and antioxidants from high-quality fruits and vegetables.",
-      img: "/fitline_powercocktail.png"
+      name: "FitLine Basics",
+      tagline: "Your Daily Cellular Foundation",
+      focus: "Digestion & Immunity",
+      desc: "A premium nutritional foundation that optimizes nutrient absorption, promotes healthy gut flora, and supports immune defenses. Packed with vitamins, soluble and insoluble fibers, digestive enzymes, and beneficial probiotics.",
+      img: "/fitline_basics.png"
+    },
+    {
+      name: "FitLine Activize Oxyplus",
+      tagline: "Your Daily Energy & Concentration Booster",
+      focus: "Energy & Performance",
+      desc: "Specially formulated to support active energy metabolism, cognitive clarity, and physical endurance. Supplies vital B-vitamins and features a patented delivery system that aids in cellular oxygen supply.",
+      img: "/fitline_activize.png"
     },
     {
       name: "FitLine Restorate",
       tagline: "Your Nighttime Regeneration",
-      focus: "Recovery, Sleep & Minerals",
-      desc: "A premium nighttime mineral beverage that supports muscle recovery, skeletal integrity, and deep regenerative sleep. Loaded with high-quality, bioavailable calcium, magnesium, zinc, iron, and vitamin D.",
+      focus: "Recovery & Sleep",
+      desc: "The perfect nighttime recovery drink rich in essential minerals and trace elements (magnesium, calcium, zinc, iron, vitamin D). Promotes rapid muscle repair, skeletal health, and deep restorative sleep.",
       img: "/fitline_restorate.png"
-    },
-    {
-      name: "FitLine Optimal Set",
-      tagline: "The 24-Hour Nutritional System",
-      focus: "Complete Health & Cellular Vitality",
-      desc: "D'Quatre's recommended base nutrition system. Combining PowerCocktail in the morning and Restorate at night, this duo ensures your body receives constant, balanced cellular support around the clock.",
-      img: "/fitline_optimal_set.png"
     }
   ];
+
 
   const focusAreas = [
     {
       title: "Daily Health & Immunity",
       desc: "Strengthen biological defenses and immune pathways with complete, bio-available micronutrient blends.",
       icon: (
-        <svg className="w-6 h-6 text-[#1B365D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#1E00FA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
         </svg>
       )
@@ -42,7 +43,7 @@ export default function FitLinePage() {
       title: "Energy, Performance & Endurance",
       desc: "Upgrade ATP cellular energy generation and mental focus, powering through heavy workouts and demanding business days.",
       icon: (
-        <svg className="w-6 h-6 text-[#1B365D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#1E00FA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       )
@@ -51,7 +52,7 @@ export default function FitLinePage() {
       title: "Recovery & Cellular Health",
       desc: "Speed muscle cell recovery and reduce metabolic oxidative stress, ensuring quick rejuvenation between training sessions.",
       icon: (
-        <svg className="w-6 h-6 text-[#1B365D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#1E00FA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H17" />
         </svg>
       )
@@ -60,7 +61,7 @@ export default function FitLinePage() {
       title: "Longevity & Active Aging",
       desc: "Preserve skeletal strength, cardiovascular vitality, and optimal cognitive functions past age 40.",
       icon: (
-        <svg className="w-6 h-6 text-[#1B365D]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 text-[#1E00FA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
         </svg>
       )
@@ -95,7 +96,7 @@ export default function FitLinePage() {
           className="object-cover opacity-60 scale-102"
         />
         <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-12 w-full">
-          <p className="text-xs tracking-[0.2em] text-[#1B365D] font-bold mb-3 uppercase">PREMIUM NUTRITION</p>
+          <p className="text-xs tracking-[0.2em] text-[#1E00FA] font-bold mb-3 uppercase">PREMIUM NUTRITION</p>
           <h1 className="text-4xl md:text-6xl font-bold max-w-3xl leading-tight">
             German Science.<br />
             <span className="italic text-red-100 font-normal">Optimal Cellular Energy.</span>
@@ -109,7 +110,7 @@ export default function FitLinePage() {
       {/* CONCEPT BREAKDOWN */}
       <section className="py-24 max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center">
         <div className="space-y-6">
-          <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+          <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
             PATENTED SCIENCE
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
@@ -126,7 +127,7 @@ export default function FitLinePage() {
           <div className="flex flex-wrap gap-4 pt-4">
             <Link
               href="/contact"
-              className="bg-[#1B365D] text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-black transition-colors duration-300 shadow-md"
+              className="bg-[#1E00FA] text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-black transition-colors duration-300 shadow-md"
             >
               Book Nutrition Consultation
             </Link>
@@ -152,7 +153,7 @@ export default function FitLinePage() {
       <section className="bg-white py-24 border-t border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               D'QUATRE RECOMMENDATIONS
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
@@ -172,11 +173,11 @@ export default function FitLinePage() {
                       src={prod.img}
                       alt={prod.name}
                       fill
-                      className="object-cover"
+                      className="object-contain p-6"
                     />
                   </div>
                   <div className="p-8 space-y-4">
-                    <span className="text-[10px] font-bold text-[#1B365D] uppercase tracking-wider bg-[#1B365D]/5 px-2.5 py-1 rounded">
+                    <span className="text-[10px] font-bold text-[#1E00FA] uppercase tracking-wider bg-[#1E00FA]/5 px-2.5 py-1 rounded">
                       {prod.focus}
                     </span>
                     <div className="space-y-1">
@@ -191,7 +192,7 @@ export default function FitLinePage() {
                 <div className="p-8 pt-0">
                   <Link
                     href="/contact"
-                    className="w-full bg-black text-white hover:bg-[#1B365D] text-center text-xs py-3 rounded-full font-bold uppercase tracking-wider block transition-colors shadow-sm"
+                    className="w-full bg-black text-white hover:bg-[#1E00FA] text-center text-xs py-3 rounded-full font-bold uppercase tracking-wider block transition-colors shadow-sm"
                   >
                     Enquire for {prod.name.split(" ")[1] || "Supplement"}
                   </Link>
@@ -202,11 +203,47 @@ export default function FitLinePage() {
         </div>
       </section>
 
+      {/* OPTIMAL SET HIGHLIGHT BANNER */}
+      <section className="bg-[#1E00FA]/5 py-24 border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center">
+          <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-md border border-gray-100 bg-white order-2 md:order-1">
+            <Image
+              src="/fitline_optimal_set.png"
+              alt="FitLine Optimal Set"
+              fill
+              className="object-contain p-6"
+            />
+          </div>
+          <div className="space-y-6 order-1 md:order-2">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
+              THE ULTIMATE CORE SYSTEM
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-black">
+              The FitLine Optimal Set
+            </h2>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              The Optimal Set is PM International's flagship foundational nutrition system, combining three synergistic products: <strong>Basics</strong>, <strong>Activize Oxyplus</strong>, and <strong>Restorate</strong>.
+            </p>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              This powerful trio supplies your body with vital cellular nutrients from morning until night. By taking Basics and Activize Oxyplus in the morning to optimize digestion and cellular energy, followed by Restorate in the evening for mineral replenishment and sleep recovery, you cover all key biological bases. It is the absolute cornerstone of D'Quatre's supplement recommendations.
+            </p>
+            <div className="pt-4">
+              <Link
+                href="/contact"
+                className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 shadow-md inline-block"
+              >
+                Enquire for the Optimal Set
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WHY FITLINE WORKS */}
       <section className="bg-black text-white py-24">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-            <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+            <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
               WHY FITLINE WORKS
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
@@ -216,8 +253,8 @@ export default function FitLinePage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {valueProps.map((vp) => (
-              <div key={vp.title} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-[#1B365D] transition-all duration-300">
-                <h3 className="text-lg font-bold mb-3 text-white border-l-2 border-[#1B365D] pl-3">{vp.title}</h3>
+              <div key={vp.title} className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-[#1E00FA] transition-all duration-300">
+                <h3 className="text-lg font-bold mb-3 text-white border-l-2 border-[#1E00FA] pl-3">{vp.title}</h3>
                 <p className="text-gray-400 text-xs md:text-sm leading-relaxed">{vp.desc}</p>
               </div>
             ))}
@@ -228,7 +265,7 @@ export default function FitLinePage() {
       {/* FOCUS AREAS */}
       <section className="py-24 max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-          <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+          <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
             FOCUS AREAS
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
@@ -240,7 +277,7 @@ export default function FitLinePage() {
           {focusAreas.map((area) => (
             <div key={area.title} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 space-y-4 flex flex-col justify-between">
               <div className="space-y-4">
-                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1B365D]/5">
+                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1E00FA]/5">
                   {area.icon}
                 </div>
                 <h3 className="text-lg font-bold text-black leading-tight">{area.title}</h3>
@@ -254,7 +291,7 @@ export default function FitLinePage() {
       {/* NUTRITION PHILOSOPHY */}
       <section className="bg-[#F5F5F7] py-24 border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-6 text-center space-y-6">
-          <span className="text-[#1B365D] text-xs font-bold uppercase tracking-widest block">
+          <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
             NUTRITION PHILOSOPHY
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-black">
@@ -266,7 +303,7 @@ export default function FitLinePage() {
           <div className="pt-4">
             <Link
               href="/contact"
-              className="bg-[#1B365D] text-white px-10 py-4 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-black transition-colors duration-300 shadow-md inline-block"
+              className="bg-[#1E00FA] text-white px-10 py-4 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-black transition-colors duration-300 shadow-md inline-block"
             >
               Get Your FitLine Plan
             </Link>
