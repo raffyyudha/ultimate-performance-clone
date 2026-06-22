@@ -208,9 +208,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { name: "Susan", result: "Lost 21kg & 18% body fat", img: "/result1.jpeg" },
-              { name: "Roy", result: "40kg transformation at 57", img: "/result2.jpeg" },
-              { name: "Zrinka", result: "53kg weight loss", img: "/result3.jpeg" },
+              { name: "Hendra", result: "Lost 21kg & 18% body fat", img: "/result1.jpeg" },
+              { name: "Seng", result: "40kg transformation at 57", img: "/result2.jpeg" },
+              { name: "Ah Chuan", result: "53kg weight loss", img: "/result3.jpeg" },
             ].map((client, i) => (
               <div key={i} className="bg-black text-white rounded-lg overflow-hidden group cursor-pointer">
                 <div className="relative h-[350px]">

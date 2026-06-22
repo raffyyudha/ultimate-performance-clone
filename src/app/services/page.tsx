@@ -15,32 +15,32 @@ export default function ServicesPage() {
     {
       doubt: "I am too overweight to start",
       body: "Beginning with a large amount of weight to lose can feel daunting. What matters is having a clear process, expert guidance, and consistent support from Day 1.",
-      story: "Zrinka trusted the Quatre Fitness Method, followed the process step by step, and lost 53kg (117lbs) and transformed her long-term health.",
-      name: "ZRINKA'S STORY",
+      story: "Ah Chuan trusted the Quatre Fitness Method, followed the process step by step, and lost 53kg (117lbs) and transformed his long-term health.",
+      name: "AH CHUAN'S STORY",
       link: "/results",
       img: "/result3.jpeg"
     },
     {
       doubt: "I am too old to build muscle",
       body: "Many believe that strength training is only for the young. But science and our results prove that you can build muscle and improve bone density at any age.",
-      story: "Roy started at 57, trained with a customized mobile program, lost 40kg, and built significant muscle definition while eliminating joint pain.",
-      name: "ROY'S STORY",
+      story: "Seng started at 57, trained with a customized mobile program, lost 40kg, and built significant muscle definition while eliminating joint pain.",
+      name: "SENG'S STORY",
       link: "/results",
       img: "/result2.jpeg"
     },
     {
       doubt: "I don't have time for this",
       body: "Busy corporate schedules make it hard to prioritize fitness. Our mobile coaches meet you at your home or condo gym, maximizing efficiency.",
-      story: "Susan integrated 3 hours of weekly training with our nutrition system and lost 21kg without sacrificing her executive career.",
-      name: "SUSAN'S STORY",
+      story: "Hendra integrated 3 hours of weekly training with our nutrition system and lost 21kg without sacrificing his executive career.",
+      name: "HENDRA'S STORY",
       link: "/results",
       img: "/result1.jpeg"
     },
     {
       doubt: "I have past injuries",
       body: "Training with injuries can be scary. Our certified coaches design post-rehabilitative strength and posture programs to build stability safely.",
-      story: "Sarah overcame chronic back issues, improved her posture, and lost 14kg under close coaching supervision.",
-      name: "SARAH'S STORY",
+      story: "Jun overcame chronic back issues, improved his posture, and lost 14kg under close coaching supervision.",
+      name: "JUN'S STORY",
       link: "/results",
       img: "/result5.jpeg"
     }
@@ -344,69 +344,69 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Client 1: Susan */}
+            {/* Client 1: Hendra */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="relative h-[280px]">
                 <Image
                   src="/result1.jpeg"
-                  alt="Susan Transformation"
+                  alt="Hendra Transformation"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-5 space-y-2">
-                <h4 className="font-bold text-base text-black">Susan</h4>
+                <h4 className="font-bold text-base text-black">Hendra</h4>
                 <p className="text-[#1E00FA] text-xs font-bold uppercase tracking-wider">Lost 21kg & 18% body fat</p>
                 <p className="text-gray-400 text-[11px] font-semibold">TIMELINE: 12 WEEKS</p>
               </div>
             </div>
 
-            {/* Client 2: Roy */}
+            {/* Client 2: Seng */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="relative h-[280px]">
                 <Image
                   src="/result2.jpeg"
-                  alt="Roy Transformation"
+                  alt="Seng Transformation"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-5 space-y-2">
-                <h4 className="font-bold text-base text-black">Roy</h4>
+                <h4 className="font-bold text-base text-black">Seng</h4>
                 <p className="text-[#1E00FA] text-xs font-bold uppercase tracking-wider">40kg loss & muscle gain</p>
                 <p className="text-gray-400 text-[11px] font-semibold">TIMELINE: 24 WEEKS</p>
               </div>
             </div>
 
-            {/* Client 3: Zrinka */}
+            {/* Client 3: Ah Chuan */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="relative h-[280px]">
                 <Image
                   src="/result3.jpeg"
-                  alt="Zrinka Transformation"
+                  alt="Ah Chuan Transformation"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-5 space-y-2">
-                <h4 className="font-bold text-base text-black">Zrinka</h4>
+                <h4 className="font-bold text-base text-black">Ah Chuan</h4>
                 <p className="text-[#1E00FA] text-xs font-bold uppercase tracking-wider">53kg weight loss & toning</p>
                 <p className="text-gray-400 text-[11px] font-semibold">TIMELINE: 36 WEEKS</p>
               </div>
             </div>
 
-            {/* Client 4: Sarah */}
+            {/* Client 4: Jun */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
               <div className="relative h-[280px]">
                 <Image
                   src="/result5.jpeg"
-                  alt="Sarah Transformation"
+                  alt="Jun Transformation"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-5 space-y-2">
-                <h4 className="font-bold text-base text-black">Sarah</h4>
+                <h4 className="font-bold text-base text-black">Jun</h4>
                 <p className="text-[#1E00FA] text-xs font-bold uppercase tracking-wider">Lost 14kg & improved posture</p>
                 <p className="text-gray-400 text-[11px] font-semibold">TIMELINE: 12 WEEKS</p>
               </div>

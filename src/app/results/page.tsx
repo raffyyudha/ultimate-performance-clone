@@ -27,7 +27,7 @@ export default function ResultsPage() {
 
   const transformations: Transformation[] = [
     {
-      name: "Susan",
+      name: "Hendra",
       age: 51,
       goalType: "fatloss",
       result: "Lost 21kg & 18% body fat",
@@ -37,7 +37,7 @@ export default function ResultsPage() {
       story: "Before joining Quatre Fitness, I felt fatigued and had tried countless crash diets that never lasted. My dedicated coach rebuilt my nutrition from scratch, tailoring it to my active lifestyle at age 51. The private training was progressive, structured, and fit into my busy corporate schedule.",
     },
     {
-      name: "Roy",
+      name: "Seng",
       age: 57,
       goalType: "over40",
       result: "40kg weight loss & muscle gain",
@@ -47,7 +47,7 @@ export default function ResultsPage() {
       story: "I had knee pain and high cholesterol when I first started. The coaches developed a joint-friendly, strength-focused mobile program that completely rehabilitated my movement. I am now in the best shape of my life at age 57.",
     },
     {
-      name: "Zrinka",
+      name: "Ah Chuan",
       age: 34,
       goalType: "fatloss",
       result: "53kg weight loss & body toning",
@@ -67,17 +67,17 @@ export default function ResultsPage() {
       story: "I wanted to break through a strength plateau. Quatre Fitness's focus on progressive overload, mechanical execution, and high-quality FitLine supplementation helped me gain clean lean muscle without gaining excess body fat.",
     },
     {
-      name: "Sarah",
+      name: "Jun",
       age: 46,
       goalType: "over40",
       result: "Lost 14kg & improved bone density",
       timeline: "12 Weeks",
       img: "/result5.jpeg",
       quote: "I feel 15 years younger, with boundless daily energy.",
-      story: "As a busy mother, I put my health on the back burner. The mobile training program taught me how to incorporate clean macros and resistance training into my life. My posture has improved dramatically and my daily energy is amazing.",
+      story: "As a busy father, I put my health on the back burner. The mobile training program taught me how to incorporate clean macros and resistance training into my life. My posture has improved dramatically and my daily energy is amazing.",
     },
     {
-      name: "Michael",
+      name: "Wei",
       age: 42,
       goalType: "muscle",
       result: "Replaced 8kg fat with solid muscle",
