@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Quatre Fitness Group",
+  title: "About Us",
   description: "Learn about Quatre Fitness Group, a premium Singapore-based fitness and wellness lifestyle group delivering mobile coaching, Quatre Merch, and premium supplements.",
 };
 
