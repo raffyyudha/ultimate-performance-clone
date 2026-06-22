@@ -544,29 +544,29 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* SECTION 10: TRANSFORM APP FEATURE */}
+      {/* SECTION 10: PROGRESS TRACKING FEATURE */}
       <section className="bg-white py-20 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <span className="bg-[#1E00FA] text-white px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full">
-              THE QUATRE FITNESS TRANSFORM APP
+              QUATRE FITNESS PROGRESS TRACKING
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               Real-time progress, support, and guidance
             </h2>
             <div className="text-gray-600 text-sm md:text-base leading-relaxed space-y-4">
               <p>
-                Our proprietary mobile app connects you directly to your coach, logs every workout, tracks nutrition and supplements (including PM International FitLine protocols), and visualizes your progress metrics daily.
+                Our structured tracking method keeps you directly connected to your coach, who logs every workout, tracks nutrition and supplements (including PM International FitLine protocols), and visualizes your progress metrics.
               </p>
               <p>
-                Having your training log, progress pictures, strength curves, and dietary tracking in one interface eliminates guesswork and maximizes efficiency.
+                Having your training log, progress pictures, strength curves, and dietary tracking compiled and managed systematically eliminates guesswork and maximizes efficiency.
               </p>
             </div>
           </div>
           <div className="relative h-[400px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-lg border border-gray-100">
             <Image
               src="/goal_weight_management.png"
-              alt="Quatre Fitness Training App"
+              alt="Quatre Fitness Progress Tracking"
               fill
               className="object-cover"
             />
