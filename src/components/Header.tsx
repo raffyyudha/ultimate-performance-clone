@@ -136,7 +136,7 @@ export default function Header() {
               <a href="https://wa.me/6581379850" className="hover:text-maroon transition-colors font-semibold text-[10px]">
                 WhatsApp: +65 8137 9850
               </a>
-              <p className="text-[9px] text-gray-600">© 2026 D'Quatre Fitness Group Pte Ltd.</p>
+              <p className="text-[9px] text-gray-600">© 2026 Quatre Fitness Group Pte Ltd.</p>
             </div>
           </div>
         </div>

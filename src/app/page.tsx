@@ -25,7 +25,7 @@ export default function Home() {
     e.preventDefault();
 
     const pillarsText = selectedPillars.length > 0 ? selectedPillars.join(", ") : "None selected";
-    const message = `Hi D'Quatre Fitness Group, I would like to enquire about your services:
+    const message = `Hi Quatre Fitness Group, I would like to enquire about your services:
 - Name: ${firstName} ${lastName}
 - Coverage: ${coverage}
 - Location: ${location}
@@ -195,7 +195,7 @@ export default function Home() {
                 REAL CLIENTS.<br />LIFESTYLE RESULTS
               </h2>
               <p className="text-gray-600 mt-4 max-w-xl text-sm">
-                Real people who integrated fitness, apparel, and supplements into their daily schedules with D’Quatre.
+                Real people who integrated fitness, apparel, and supplements into their daily schedules with Quatre Fitness.
               </p>
             </div>
             <a href="/results" className="mt-6 md:mt-0 inline-flex items-center gap-2 btn-outline text-xs font-bold uppercase tracking-wider">
@@ -237,7 +237,7 @@ export default function Home() {
             </h2>
             <div>
               <p className="text-gray-600 mb-6">
-                Most personal training focuses purely on hourly sessions. D’Quatre Fitness Group takes a long-term approach by managing your home physical training, daily nutrition supplements, lifestyle habits, and custom athletic apparel.
+                Most personal training focuses purely on hourly sessions. Quatre Fitness Group takes a long-term approach by managing your home physical training, daily nutrition supplements, lifestyle habits, and custom athletic apparel.
               </p>
               <a href="/services" className="inline-flex items-center gap-2 btn-outline">
                 EXPLORE ALL PILLARS
@@ -317,8 +317,8 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             {[
               { name: "Julian Koh", loc: "Sentosa Cove", text: "The convenience of mobile training at my condo gym is unmatched. The coach's professionalism and structured tracking keeps me extremely consistent." },
-              { name: "Sarah Lim", loc: "Orchard Road", text: "Using FitLine supplements alongside my mobile training completely upgraded my daily energy levels. Highly recommend D’Quatre!" },
-              { name: "Robert Chen", loc: "Marina Bay", text: "D’Quatre has built a true lifestyle ecosystem. The training plans are bespoke, the Quatre apparel is premium, and my posture is fully restored." },
+              { name: "Sarah Lim", loc: "Orchard Road", text: "Using FitLine supplements alongside my mobile training completely upgraded my daily energy levels. Highly recommend Quatre Fitness!" },
+              { name: "Robert Chen", loc: "Marina Bay", text: "Quatre Fitness has built a true lifestyle ecosystem. The training plans are bespoke, the Quatre apparel is premium, and my posture is fully restored." },
             ].map((review, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-left">
                 <div className="flex text-yellow-400 mb-4">
@@ -371,7 +371,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-sm text-gray-500 mb-8 uppercase tracking-widest font-semibold">Our Strategic Brands & Alliances</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-75">
-            <span className="text-xl md:text-2xl font-sans font-bold text-black tracking-widest">D’QUATRE TRAINING</span>
+            <span className="text-xl md:text-2xl font-sans font-bold text-black tracking-widest">QUATRE FITNESS TRAINING</span>
             <span className="text-xl md:text-2xl font-sans font-bold text-black tracking-widest">QUATRE MERCH</span>
             <span className="text-xl md:text-2xl font-sans font-bold text-black tracking-widest">FITLINE (GERMANY)</span>
             <span className="text-xl md:text-2xl font-sans font-bold text-black tracking-widest">PM INTERNATIONAL</span>

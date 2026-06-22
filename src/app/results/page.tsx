@@ -33,8 +33,8 @@ export default function ResultsPage() {
       result: "Lost 21kg & 18% body fat",
       timeline: "12 Weeks",
       img: "/result1.jpeg",
-      quote: "D'Quatre changed my entire relationship with nutrition.",
-      story: "Before joining D'Quatre, I felt fatigued and had tried countless crash diets that never lasted. My dedicated coach rebuilt my nutrition from scratch, tailoring it to my active lifestyle at age 51. The private training was progressive, structured, and fit into my busy corporate schedule.",
+      quote: "Quatre Fitness changed my entire relationship with nutrition.",
+      story: "Before joining Quatre Fitness, I felt fatigued and had tried countless crash diets that never lasted. My dedicated coach rebuilt my nutrition from scratch, tailoring it to my active lifestyle at age 51. The private training was progressive, structured, and fit into my busy corporate schedule.",
     },
     {
       name: "Roy",
@@ -43,7 +43,7 @@ export default function ResultsPage() {
       result: "40kg weight loss & muscle gain",
       timeline: "24 Weeks",
       img: "/result2.jpeg",
-      quote: "I thought age was a barrier. D'Quatre proved me completely wrong.",
+      quote: "I thought age was a barrier. Quatre Fitness proved me completely wrong.",
       story: "I had knee pain and high cholesterol when I first started. The coaches developed a joint-friendly, strength-focused mobile program that completely rehabilitated my movement. I am now in the best shape of my life at age 57.",
     },
     {
@@ -64,7 +64,7 @@ export default function ResultsPage() {
       timeline: "16 Weeks",
       img: "/result4.jpeg",
       quote: "The details in their strength tracking is unparalleled.",
-      story: "I wanted to break through a strength plateau. D'Quatre's focus on progressive overload, mechanical execution, and high-quality FitLine supplementation helped me gain clean lean muscle without gaining excess body fat.",
+      story: "I wanted to break through a strength plateau. Quatre Fitness's focus on progressive overload, mechanical execution, and high-quality FitLine supplementation helped me gain clean lean muscle without gaining excess body fat.",
     },
     {
       name: "Sarah",
@@ -114,7 +114,7 @@ export default function ResultsPage() {
             <a href="/contact" className="text-maroon hover:underline font-bold">
               hear what our clients say
             </a>{" "}
-            about the D'Quatre experience in their own words.
+            about the Quatre Fitness experience in their own words.
           </p>
         </div>
         <div className="col-span-12 md:col-span-7 h-[350px] md:h-[500px] lg:h-[550px] relative overflow-hidden">

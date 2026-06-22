@@ -15,7 +15,7 @@ export default function ServicesPage() {
     {
       doubt: "I am too overweight to start",
       body: "Beginning with a large amount of weight to lose can feel daunting. What matters is having a clear process, expert guidance, and consistent support from Day 1.",
-      story: "Zrinka trusted the D'Quatre Method, followed the process step by step, and lost 53kg (117lbs) and transformed her long-term health.",
+      story: "Zrinka trusted the Quatre Fitness Method, followed the process step by step, and lost 53kg (117lbs) and transformed her long-term health.",
       name: "ZRINKA'S STORY",
       link: "/results",
       img: "/result3.jpeg"
@@ -65,7 +65,7 @@ export default function ServicesPage() {
     },
     {
       q: "Why is this different from other personal training?",
-      a: "Unlike standard personal trainers who just count reps, D'Quatre provides a comprehensive lifestyle ecosystem. We manage your training, nutrition plans, daily accountability check-ins, supplement schedules (with premium FitLine supplements), and track data points continuously to guarantee your success."
+      a: "Unlike standard personal trainers who just count reps, Quatre Fitness provides a comprehensive lifestyle ecosystem. We manage your training, nutrition plans, daily accountability check-ins, supplement schedules (with premium FitLine supplements), and track data points continuously to guarantee your success."
     }
   ];
 
@@ -95,7 +95,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-            Personal training at D'Quatre
+            Personal training at Quatre Fitness
           </h1>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function ServicesPage() {
             </h2>
             <div className="space-y-4 text-gray-600 text-sm md:text-base leading-relaxed max-w-3xl">
               <p>
-                We don't do fads, fashion, or quick fixes. We deliver life-changing results. D'Quatre is the premium personal training group built for clients who want structure, evidence-based training, and total accountability.
+                We don't do fads, fashion, or quick fixes. We deliver life-changing results. Quatre Fitness is the premium personal training group built for clients who want structure, evidence-based training, and total accountability.
               </p>
               <p>
                 Our home and mobile personal training programs in Singapore are designed to make your goals inevitable. Whether you want to lose weight, build strength, rehab an injury, or improve your longevity, we manage every variable of your training, nutrition, and lifestyle to guarantee progress.
@@ -236,7 +236,7 @@ export default function ServicesPage() {
       <section className="bg-white py-20 border-t border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-6 text-center space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            How personal training works at D'Quatre
+            How personal training works at Quatre Fitness
           </h2>
           <p className="text-gray-500 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
             Our step-by-step process is designed to support you from day one to the day you achieve your goal.
@@ -539,7 +539,7 @@ export default function ServicesPage() {
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 mt-8 text-center">
           <p className="text-gray-400 text-[10px] italic">
-            *Based on strength (1RM) and health marker studies tracking D'Quatre clients over 12-week cycles. Individual results may vary.
+            *Based on strength (1RM) and health marker studies tracking Quatre Fitness clients over 12-week cycles. Individual results may vary.
           </p>
         </div>
       </section>
@@ -549,7 +549,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <span className="bg-[#1E00FA] text-white px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full">
-              THE D'QUATRE TRANSFORM APP
+              THE QUATRE FITNESS TRANSFORM APP
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               Real-time progress, support, and guidance
@@ -566,7 +566,7 @@ export default function ServicesPage() {
           <div className="relative h-[400px] md:h-[480px] w-full rounded-3xl overflow-hidden shadow-lg border border-gray-100">
             <Image
               src="/goal_weight_management.png"
-              alt="D'Quatre Training App"
+              alt="Quatre Fitness Training App"
               fill
               className="object-cover"
             />
@@ -585,7 +585,7 @@ export default function ServicesPage() {
               It's normal to question whether personal training will work for you. Almost every client we work with had doubts before they started – about age, fitness level, past experiences, injuries, or their ability to stay consistent.
             </p>
             <p>
-              What they discovered is that following a structured process, guided by an expert at D'Quatre, removed uncertainty and helped them confidently achieve results. Below are some of the most common doubts clients arrive with – and how the process worked for them.
+              What they discovered is that following a structured process, guided by an expert at Quatre Fitness, removed uncertainty and helped them confidently achieve results. Below are some of the most common doubts clients arrive with – and how the process worked for them.
             </p>
           </div>
         </div>

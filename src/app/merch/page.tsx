@@ -29,21 +29,21 @@ export default function QuatreMerchPage() {
       price: "SGD 45.00",
       desc: "Lightweight, sweat-wicking athletic tee designed for high-intensity training. Features custom athletic fit and minimal branding.",
       img: "/merch_item_1.jpg",
-      waText: "Hi D'Quatre, I would like to enquire about the Signature Performance Tee (SGD 45.00)."
+      waText: "Hi Quatre, I would like to enquire about the Signature Performance Tee (SGD 45.00)."
     },
     {
       title: "Elite Oversized Hoodie",
       price: "SGD 85.00",
       desc: "Premium heavyweight cotton drop-shoulder hoodie. Designed for comfort, warmth, and a strong athletic presence.",
       img: "/merch_item_2.jpg",
-      waText: "Hi D'Quatre, I would like to enquire about the Elite Oversized Hoodie (SGD 85.00)."
+      waText: "Hi Quatre, I would like to enquire about the Elite Oversized Hoodie (SGD 85.00)."
     },
     {
       title: "Urban Athlete Joggers",
       price: "SGD 65.00",
       desc: "Flexible, four-way stretch joggers designed to transition seamlessly from the training floor to urban recovery.",
       img: "/merch_item_3.jpg",
-      waText: "Hi D'Quatre, I would like to enquire about the Urban Athlete Joggers (SGD 65.00)."
+      waText: "Hi Quatre, I would like to enquire about the Urban Athlete Joggers (SGD 65.00)."
     }
   ];
 
@@ -82,7 +82,7 @@ export default function QuatreMerchPage() {
           </h2>
           <div className="space-y-4 text-gray-600 text-sm md:text-base leading-relaxed">
             <p>
-              Quatre Merch is the in-house premium apparel and lifestyle merchandise brand of D’Quatre Fitness Group. Designed for individuals who value performance, comfort, and refined aesthetics, Quatre Merch represents the identity of a modern fitness lifestyle — in training and beyond.
+              Quatre Merch is the in-house premium apparel and lifestyle merchandise brand of Quatre Fitness Group. Designed for individuals who value performance, comfort, and refined aesthetics, Quatre Merch represents the identity of a modern fitness lifestyle — in training and beyond.
             </p>
             <p>
               Our design philosophy is minimalist, functional, and premium. Every piece is created to transition seamlessly from high-intensity workout environments to daily urban wear.
@@ -207,7 +207,7 @@ export default function QuatreMerchPage() {
             Looking for Co-Branded Team Wear?
           </h2>
           <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-            We partner with corporate teams, fitness clubs, and athletic organizations in Singapore to provide customized, high-quality D'Quatre apparel tailored to your group's specifications.
+            We partner with corporate teams, fitness clubs, and athletic organizations in Singapore to provide customized, high-quality Quatre apparel tailored to your group's specifications.
           </p>
           <div className="pt-4">
             <Link

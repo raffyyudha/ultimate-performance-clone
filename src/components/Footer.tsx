@@ -117,7 +117,7 @@ export default function Footer() {
         {/* Legal & Copy */}
         <div className="border-t border-white/5 pt-8 mt-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <p className="text-[11px] text-gray-500 tracking-wider">
-            © 2026 D’Quatre Fitness Group Pte Ltd. All rights reserved.
+            © 2026 Quatre Fitness Group Pte Ltd. All rights reserved.
           </p>
           <div className="flex gap-6 text-[10px] text-gray-500 uppercase tracking-widest font-semibold">
             <Link href="/contact" className="hover:text-white transition-colors">Privacy Policy</Link>
@@ -134,7 +134,7 @@ export default function Footer() {
 
       {/* Floating WhatsApp Action Button */}
       <a
-        href="https://wa.me/6581379850?text=Hi%20D'Quatre%20Fitness%20Group,%20I%20would%20like%20to%20enquire%20about%20your%20services."
+        href="https://wa.me/6581379850?text=Hi%20Quatre Fitness%20Fitness%20Group,%20I%20would%20like%20to%20enquire%20about%20your%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-[60px] h-[60px] rounded-full shadow-2xl hover:scale-110 hover:bg-[#20ba56] transition-all duration-300 flex items-center justify-center group"

@@ -538,7 +538,7 @@ export default function CalculatorPage() {
                 Live Results Dashboard
               </h3>
               <span className="text-[9px] bg-[#1E00FA] text-white font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                D'Quatre Analytics
+                Quatre Fitness Analytics
               </span>
             </div>
 

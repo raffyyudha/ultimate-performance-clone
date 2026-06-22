@@ -64,7 +64,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10" />
         <Image
           src="/contact_hero.png"
-          alt="Contact D'Quatre Fitness Group"
+          alt="Contact Quatre Fitness Group"
           fill
           priority
           className="object-cover opacity-50 filter grayscale"
@@ -93,7 +93,7 @@ export default function ContactPage() {
               Corporate & Personal Enquiries
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed max-w-md font-medium">
-              D’Quatre Fitness Group Pte Ltd is based in Singapore, delivering premium personal coaching, apparel collections, and nutrition systems directly to your location.
+              Quatre Fitness Group Pte Ltd is based in Singapore, delivering premium personal coaching, apparel collections, and nutrition systems directly to your location.
             </p>
           </div>
 
@@ -109,7 +109,7 @@ export default function ContactPage() {
                 <h4 className="font-extrabold text-[10px] uppercase tracking-wider text-gray-400">WhatsApp Hot Line</h4>
                 <p className="text-sm">
                   <a
-                    href="https://wa.me/6581379850?text=Hi%20D'Quatre%20Fitness%20Group,%20I'd%20like%20to%20enquire%20about%20personal%20training."
+                    href="https://wa.me/6581379850?text=Hi%20Quatre Fitness%20Fitness%20Group,%20I'd%20like%20to%20enquire%20about%20personal%20training."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline text-[#25D366] font-extrabold text-base tracking-wide"
@@ -149,7 +149,7 @@ export default function ContactPage() {
               <div className="space-y-2">
                 <h3 className="text-2xl font-extrabold text-black tracking-tight">Thank You, {formData.firstName}!</h3>
                 <p className="text-gray-500 text-sm max-w-md mx-auto leading-relaxed font-semibold">
-                  Your consultation request for training at <strong>{formData.location}</strong> has been received. A D'Quatre coach will contact you within 24 hours.
+                  Your consultation request for training at <strong>{formData.location}</strong> has been received. A Quatre Fitness coach will contact you within 24 hours.
                 </p>
               </div>
               <div className="bg-[#F5F5F7] p-5 rounded-2xl text-left text-xs text-gray-600 max-w-md mx-auto space-y-3 border border-gray-200/50">

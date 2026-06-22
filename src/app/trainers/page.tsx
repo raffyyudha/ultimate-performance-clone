@@ -9,16 +9,16 @@ export default function TrainersPage() {
 
   const faqs = [
     {
-      q: "Do D'Quatre trainers have qualifications?",
-      a: "Yes. Every single coach at D'Quatre holds recognized personal training and sports science qualifications. Furthermore, before they train any D'Quatre client, they must complete our intensive in-house training program and undergo ongoing education consisting of 200+ hours of structured training every year."
+      q: "Do Quatre Fitness trainers have qualifications?",
+      a: "Yes. Every single coach at Quatre Fitness holds recognized personal training and sports science qualifications. Furthermore, before they train any Quatre Fitness client, they must complete our intensive in-house training program and undergo ongoing education consisting of 200+ hours of structured training every year."
     },
     {
       q: "How do you match me with the right personal trainer?",
       a: "We match you based on your specific health history, biomechanics assessment, goals (e.g., body recomposition, post-injury rehab, active aging), and schedule. This ensures you work with a coach who is an expert in your exact area of need."
     },
     {
-      q: "What's it like training with a D'Quatre trainer?",
-      a: "Training with a D'Quatre coach is structured, intense, and highly focused. They manage every variable of your fitness journey: they log every weight you lift, track your nutrition diary daily, monitor sleep and supplement protocols, and adjust variables dynamically to keep you progressing."
+      q: "What's it like training with a Quatre Fitness trainer?",
+      a: "Training with a Quatre Fitness coach is structured, intense, and highly focused. They manage every variable of your fitness journey: they log every weight you lift, track your nutrition diary daily, monitor sleep and supplement protocols, and adjust variables dynamically to keep you progressing."
     },
     {
       q: "Can I train around an injury or medical condition?",
@@ -26,7 +26,7 @@ export default function TrainersPage() {
     },
     {
       q: "Is the process different at every location?",
-      a: "No. The D'Quatre training systems, tracking methods, and accountability standards are standardized group-wide. Whether you train at home, in your condo gym, or at a private space, you will experience the exact same rigorous methodology and results-oriented coaching."
+      a: "No. The Quatre Fitness training systems, tracking methods, and accountability standards are standardized group-wide. Whether you train at home, in your condo gym, or at a private space, you will experience the exact same rigorous methodology and results-oriented coaching."
     }
   ];
 
@@ -40,7 +40,7 @@ export default function TrainersPage() {
       <section className="relative h-[480px] w-full flex items-center justify-center bg-black overflow-hidden">
         <Image
           src="/contact_hero.png"
-          alt="D'Quatre Trainers Hero"
+          alt="Quatre Fitness Trainers Hero"
           fill
           priority
           className="object-cover opacity-60 filter grayscale contrast-125"
@@ -110,7 +110,7 @@ export default function TrainersPage() {
                 Every candidate goes through a six-stage recruitment process designed to test far more than technical skill. We look for trainers who are obsessed with results, thrive in a high-standards team environment, and take their clients' progress personally.
               </p>
               <p>
-                When you work with a D'Quatre trainer, you're not choosing from a marketplace where quality is impossible to judge. You're being matched with one of the most rigorously selected coaching professionals in the industry.
+                When you work with a Quatre Fitness trainer, you're not choosing from a marketplace where quality is impossible to judge. You're being matched with one of the most rigorously selected coaching professionals in the industry.
               </p>
             </div>
             <div className="pt-4">
@@ -158,10 +158,10 @@ export default function TrainersPage() {
             </h2>
             <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
               <p className="font-semibold text-black">
-                Most personal trainers complete a short qualification, and that's where learning stops. At D'Quatre, development is continuous and non-negotiable.
+                Most personal trainers complete a short qualification, and that's where learning stops. At Quatre Fitness, development is continuous and non-negotiable.
               </p>
               <p>
-                In their first year alone, every trainer completes over 200 hours of structured education. Case studies. Assessments. Mentorship. Team training. Practical application. All designed to embed the D'Quatre Method and the standards required to deliver consistently at the highest level.
+                In their first year alone, every trainer completes over 200 hours of structured education. Case studies. Assessments. Mentorship. Team training. Practical application. All designed to embed the Quatre Fitness Method and the standards required to deliver consistently at the highest level.
               </p>
               <p>
                 This means you work with a trainer operating at the leading edge of the industry. And you'll feel the difference.
@@ -172,7 +172,7 @@ export default function TrainersPage() {
                 href="/about"
                 className="bg-black text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#1E00FA] transition-colors duration-300 shadow-sm inline-block"
               >
-                WHY THE D'QUATRE METHOD IS SO EFFECTIVE
+                WHY THE QUATRE FITNESS METHOD IS SO EFFECTIVE
               </Link>
             </div>
           </div>
@@ -241,10 +241,10 @@ export default function TrainersPage() {
                 Your trainer is responsible for your results. And behind them is a leadership structure that supports, challenges, and maintains the standards that make those results possible.
               </p>
               <p>
-                Trainers at D'Quatre are measured on outcomes, not hours worked or sessions sold. Progress is constantly tracked, performance is monitored, and when momentum slows, we step in to adjust your plan judiciously.
+                Trainers at Quatre Fitness are measured on outcomes, not hours worked or sessions sold. Progress is constantly tracked, performance is monitored, and when momentum slows, we step in to adjust your plan judiciously.
               </p>
               <p className="font-semibold text-black">
-                This level of accountability doesn't exist in any other personal training environment. And it shows in the outcomes: 97% of D'Quatre clients achieve their goals, compared to 70% who fall short with other methods.
+                This level of accountability doesn't exist in any other personal training environment. And it shows in the outcomes: 97% of Quatre Fitness clients achieve their goals, compared to 70% who fall short with other methods.
               </p>
               <p>
                 We don't let standards slip. We don't let progress drift. And we never leave your results to chance.
@@ -331,7 +331,7 @@ export default function TrainersPage() {
       <section className="bg-white py-20 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-16">
-            Frequently asked questions about D'Quatre trainers
+            Frequently asked questions about Quatre Fitness trainers
           </h2>
 
           <div className="space-y-4">

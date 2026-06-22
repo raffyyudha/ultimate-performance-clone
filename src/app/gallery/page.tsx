@@ -64,7 +64,7 @@ export default function GalleryPage() {
         <div className="relative z-20 text-center px-4 max-w-4xl mx-auto">
           <p className="text-xs text-[#1E00FA] font-bold uppercase tracking-widest mb-3">VISUAL GALLERY</p>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-            The D'Quatre Lifestyle
+            The Quatre Fitness Lifestyle
           </h1>
         </div>
       </section>

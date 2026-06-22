@@ -118,7 +118,7 @@ export default function FitLinePage() {
           </h2>
           <div className="space-y-4 text-gray-600 text-sm md:text-base leading-relaxed">
             <p>
-              D’Quatre Fitness Group proudly represents FitLine by PM International (Germany), a globally recognized premium nutrition brand present in over 40 countries.
+              Quatre Fitness Group proudly represents FitLine by PM International (Germany), a globally recognized premium nutrition brand present in over 40 countries.
             </p>
             <p>
               FitLine is built on the patented <strong className="text-black">Nutrient Transport Concept (NTC®)</strong>, designed to ensure that nutrients are delivered to the cells at the right time for optimal absorption and effectiveness.
@@ -154,7 +154,7 @@ export default function FitLinePage() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
             <span className="text-[#1E00FA] text-xs font-bold uppercase tracking-widest block">
-              D'QUATRE RECOMMENDATIONS
+              QUATRE FITNESS RECOMMENDATIONS
             </span>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               The Optimal Nutrition Roster
@@ -225,7 +225,7 @@ export default function FitLinePage() {
               The Optimal Set is PM International's flagship foundational nutrition system, combining three synergistic products: <strong>Basics</strong>, <strong>Activize Oxyplus</strong>, and <strong>Restorate</strong>.
             </p>
             <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-              This powerful trio supplies your body with vital cellular nutrients from morning until night. By taking Basics and Activize Oxyplus in the morning to optimize digestion and cellular energy, followed by Restorate in the evening for mineral replenishment and sleep recovery, you cover all key biological bases. It is the absolute cornerstone of D'Quatre's supplement recommendations.
+              This powerful trio supplies your body with vital cellular nutrients from morning until night. By taking Basics and Activize Oxyplus in the morning to optimize digestion and cellular energy, followed by Restorate in the evening for mineral replenishment and sleep recovery, you cover all key biological bases. It is the absolute cornerstone of Quatre Fitness's supplement recommendations.
             </p>
             <div className="pt-4">
               <Link
