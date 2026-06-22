@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     template: "%s | Quatre Fitness",
   },
   description: "Quatre Fitness Group is a premium Singapore-based fitness and wellness lifestyle group delivering mobile coaching, custom athletic apparel, and premium supplements.",
+  icons: {
+    icon: "/logoquatre.png",
+  },
 };
 
 import Header from "@/components/Header";
