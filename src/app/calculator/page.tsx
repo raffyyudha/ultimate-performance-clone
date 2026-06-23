@@ -10,23 +10,36 @@ export default function CalculatorPage() {
   const [activeTab, setActiveTab] = useState<CalcType>("bmi");
 
   // Input states
-  const [weight, setWeight] = useState<number>(75);
-  const [height, setHeight] = useState<number>(178);
-  const [age, setAge] = useState<number>(28);
+  const [weight, setWeight] = useState<number | "">(75);
+  const [height, setHeight] = useState<number | "">(178);
+  const [age, setAge] = useState<number | "">(28);
   const [gender, setGender] = useState<"male" | "female">("male");
   const [activity, setActivity] = useState<number>(1.55); // Moderately active default
   const [goal, setGoal] = useState<"loss" | "maintain" | "gain">("loss");
-  const [neck, setNeck] = useState<number>(38);
-  const [waist, setWaist] = useState<number>(85);
-  const [hip, setHip] = useState<number>(95);
-  const [liftWeight, setLiftWeight] = useState<number>(100);
-  const [reps, setReps] = useState<number>(5);
-  const [rhr, setRhr] = useState<number>(65); // resting heart rate
-  const [exercise, setExercise] = useState<number>(45); // exercise minutes
+  const [neck, setNeck] = useState<number | "">(38);
+  const [waist, setWaist] = useState<number | "">(85);
+  const [hip, setHip] = useState<number | "">(95);
+  const [liftWeight, setLiftWeight] = useState<number | "">(100);
+  const [reps, setReps] = useState<number | "">(5);
+  const [rhr, setRhr] = useState<number | "">(65); // resting heart rate
+  const [exercise, setExercise] = useState<number | "">(45); // exercise minutes
+
+  // Resolve input values to numbers, using safe fallbacks for calculations
+  const w = weight === "" ? 0 : weight;
+  const h = height === "" ? 0 : height;
+  const a = age === "" ? 0 : age;
+  const n = neck === "" ? 0 : neck;
+  const wt = waist === "" ? 0 : waist;
+  const hp = hip === "" ? 0 : hip;
+  const lw = liftWeight === "" ? 0 : liftWeight;
+  const rp = reps === "" ? 0 : reps;
+  const rh = rhr === "" ? 0 : rhr;
+  const ex = exercise === "" ? 0 : exercise;
 
   // Calculated variables
-  const heightInMeters = height / 100;
-  const bmi = heightInMeters > 0 ? parseFloat((weight / (heightInMeters * heightInMeters)).toFixed(1)) : 0;
+  // Calculated variables
+  const heightInMeters = h / 100;
+  const bmi = heightInMeters > 0 ? parseFloat((w / (heightInMeters * heightInMeters)).toFixed(1)) : 0;
 
   let bmiCategory = "";
   let bmiColor = "";
@@ -48,9 +61,10 @@ export default function CalculatorPage() {
     }
   }
 
-  const bmr = gender === "male"
-    ? Math.round(10 * weight + 6.25 * height - 5 * age + 5)
-    : Math.round(10 * weight + 6.25 * height - 5 * age - 161);
+  const rawBmr = gender === "male"
+    ? Math.round(10 * w + 6.25 * h - 5 * a + 5)
+    : Math.round(10 * w + 6.25 * h - 5 * a - 161);
+  const bmr = Math.max(0, rawBmr);
 
   const tdee = Math.round(bmr * activity);
 
@@ -70,27 +84,27 @@ export default function CalculatorPage() {
 
   let bodyFat = 0;
   if (gender === "male") {
-    const diff = waist - neck;
-    if (diff > 0 && height > 0) {
-      bodyFat = parseFloat((86.01 * Math.log10(diff) - 70.041 * Math.log10(height) + 36.76).toFixed(1));
+    const diff = wt - n;
+    if (diff > 0 && h > 0) {
+      bodyFat = parseFloat((86.01 * Math.log10(diff) - 70.041 * Math.log10(heightInMeters * 100) + 36.76).toFixed(1));
     }
   } else {
-    const diff = waist + hip - neck;
-    if (diff > 0 && height > 0) {
-      bodyFat = parseFloat((163.205 * Math.log10(diff) - 97.684 * Math.log10(height) - 78.387).toFixed(1));
+    const diff = wt + hp - n;
+    if (diff > 0 && h > 0) {
+      bodyFat = parseFloat((163.205 * Math.log10(diff) - 97.684 * Math.log10(heightInMeters * 100) - 78.387).toFixed(1));
     }
   }
   bodyFat = Math.max(0, bodyFat);
-  const fatMass = parseFloat(((weight * bodyFat) / 100).toFixed(1));
-  const leanMass = parseFloat((weight - fatMass).toFixed(1));
+  const fatMass = parseFloat(((w * bodyFat) / 100).toFixed(1));
+  const leanMass = parseFloat((w - fatMass).toFixed(1));
 
-  const heightInInches = height / 2.54;
+  const heightInInches = h / 2.54;
   const inchesOver5Feet = Math.max(0, heightInInches - 60);
   const idealWeight = gender === "male"
     ? parseFloat((50.0 + 2.3 * inchesOver5Feet).toFixed(1))
     : parseFloat((45.5 + 2.3 * inchesOver5Feet).toFixed(1));
 
-  const whr = hip > 0 ? parseFloat((waist / hip).toFixed(2)) : 0;
+  const whr = hp > 0 ? parseFloat((wt / hp).toFixed(2)) : 0;
   let whrRisk = "";
   let whrColor = "";
   if (gender === "male") {
@@ -103,7 +117,7 @@ export default function CalculatorPage() {
     else { whrRisk = "High Risk"; whrColor = "text-red-500"; }
   }
 
-  const oneRepMax = reps > 0 ? Math.round(liftWeight * (1 + reps / 30)) : 0;
+  const oneRepMax = rp > 0 ? Math.round(lw * (1 + rp / 30)) : 0;
   const percentages = [
     { reps: 1, pct: 1.0 },
     { reps: 2, pct: 0.95 },
@@ -119,19 +133,19 @@ export default function CalculatorPage() {
   }));
 
   // Target Heart Rate (Karvonen)
-  const maxHR = 220 - age;
-  const hrr = maxHR - rhr;
+  const maxHR = Math.max(0, 220 - a);
+  const hrr = Math.max(0, maxHR - rh);
   const thrZones = [
-    { zone: "Zone 1: Warm Up", pct: "50-60%", range: `${Math.round(hrr * 0.5 + rhr)} - ${Math.round(hrr * 0.6 + rhr)}`, color: "border-sky-500/20 text-sky-400 bg-sky-500/5", desc: "Recovery training, cardiovascular prep" },
-    { zone: "Zone 2: Fat Burn", pct: "60-70%", range: `${Math.round(hrr * 0.6 + rhr)} - ${Math.round(hrr * 0.7 + rhr)}`, color: "border-emerald-500/20 text-emerald-400 bg-emerald-500/5", desc: "Optimal lipid metabolism, endurance" },
-    { zone: "Zone 3: Cardio/Aerobic", pct: "70-80%", range: `${Math.round(hrr * 0.7 + rhr)} - ${Math.round(hrr * 0.8 + rhr)}`, color: "border-yellow-500/20 text-yellow-400 bg-yellow-500/5", desc: "Aerobic fitness, heart stroke volume" },
-    { zone: "Zone 4: Anaerobic", pct: "80-90%", range: `${Math.round(hrr * 0.8 + rhr)} - ${Math.round(hrr * 0.9 + rhr)}`, color: "border-orange-500/20 text-orange-400 bg-orange-500/5", desc: "Lactate threshold builder, speed strength" },
-    { zone: "Zone 5: Max Effort", pct: "90-100%", range: `${Math.round(hrr * 0.9 + rhr)} - ${maxHR}`, color: "border-red-500/20 text-red-400 bg-red-500/5", desc: "High intensity capacity, neural performance" },
+    { zone: "Zone 1: Warm Up", pct: "50-60%", range: `${Math.round(hrr * 0.5 + rh)} - ${Math.round(hrr * 0.6 + rh)}`, color: "border-sky-500/20 text-sky-400 bg-sky-500/5", desc: "Recovery training, cardiovascular prep" },
+    { zone: "Zone 2: Fat Burn", pct: "60-70%", range: `${Math.round(hrr * 0.6 + rh)} - ${Math.round(hrr * 0.7 + rh)}`, color: "border-emerald-500/20 text-emerald-400 bg-emerald-500/5", desc: "Optimal lipid metabolism, endurance" },
+    { zone: "Zone 3: Cardio/Aerobic", pct: "70-80%", range: `${Math.round(hrr * 0.7 + rh)} - ${Math.round(hrr * 0.8 + rh)}`, color: "border-yellow-500/20 text-yellow-400 bg-yellow-500/5", desc: "Aerobic fitness, heart stroke volume" },
+    { zone: "Zone 4: Anaerobic", pct: "80-90%", range: `${Math.round(hrr * 0.8 + rh)} - ${Math.round(hrr * 0.9 + rh)}`, color: "border-orange-500/20 text-orange-400 bg-orange-500/5", desc: "Lactate threshold builder, speed strength" },
+    { zone: "Zone 5: Max Effort", pct: "90-100%", range: `${Math.round(hrr * 0.9 + rh)} - ${maxHR}`, color: "border-red-500/20 text-red-400 bg-red-500/5", desc: "High intensity capacity, neural performance" },
   ];
 
   // Daily Water Intake (hydration)
-  const baselineWater = weight * 0.033;
-  const exerciseWater = (exercise / 30) * 0.35;
+  const baselineWater = w * 0.033;
+  const exerciseWater = (ex / 30) * 0.35;
   const totalWater = parseFloat((baselineWater + exerciseWater).toFixed(2));
   const waterCups = parseFloat((totalWater / 0.25).toFixed(1));
 
@@ -318,7 +332,7 @@ export default function CalculatorPage() {
                     <input
                       type="number"
                       value={weight}
-                      onChange={(e) => setWeight(Math.max(10, parseInt(e.target.value) || 0))}
+                      onChange={(e) => setWeight(e.target.value === "" ? "" : parseFloat(e.target.value) || 0)}
                       className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
@@ -331,7 +345,7 @@ export default function CalculatorPage() {
                     <input
                       type="number"
                       value={height}
-                      onChange={(e) => setHeight(Math.max(50, parseInt(e.target.value) || 0))}
+                      onChange={(e) => setHeight(e.target.value === "" ? "" : parseFloat(e.target.value) || 0)}
                       className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
@@ -344,7 +358,7 @@ export default function CalculatorPage() {
                     <input
                       type="number"
                       value={age}
-                      onChange={(e) => setAge(Math.max(1, parseInt(e.target.value) || 0))}
+                      onChange={(e) => setAge(e.target.value === "" ? "" : parseInt(e.target.value) || 0)}
                       className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
@@ -357,7 +371,7 @@ export default function CalculatorPage() {
                     <input
                       type="number"
                       value={rhr}
-                      onChange={(e) => setRhr(Math.max(30, parseInt(e.target.value) || 0))}
+                      onChange={(e) => setRhr(e.target.value === "" ? "" : parseInt(e.target.value) || 0)}
                       className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
@@ -370,7 +384,7 @@ export default function CalculatorPage() {
                     <input
                       type="number"
                       value={exercise}
-                      onChange={(e) => setExercise(Math.max(0, parseInt(e.target.value) || 0))}
+                      onChange={(e) => setExercise(e.target.value === "" ? "" : parseInt(e.target.value) || 0)}
                       className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
@@ -383,7 +397,7 @@ export default function CalculatorPage() {
                     <input
                       type="number"
                       value={liftWeight}
-                      onChange={(e) => setLiftWeight(Math.max(1, parseInt(e.target.value) || 0))}
+                      onChange={(e) => setLiftWeight(e.target.value === "" ? "" : parseFloat(e.target.value) || 0)}
                       className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
@@ -396,7 +410,7 @@ export default function CalculatorPage() {
                     <input
                       type="number"
                       value={reps}
-                      onChange={(e) => setReps(Math.max(1, parseInt(e.target.value) || 0))}
+                      onChange={(e) => setReps(e.target.value === "" ? "" : parseInt(e.target.value) || 0)}
                       className="w-full p-3.5 border border-gray-200 rounded-xl text-sm outline-none focus:border-[#1E00FA] focus:ring-1 focus:ring-[#1E00FA] transition-all font-semibold"
                     />
                   </div>
@@ -445,7 +459,7 @@ export default function CalculatorPage() {
                         <input
                           type="number"
                           value={neck}
-                          onChange={(e) => setNeck(Math.max(10, parseInt(e.target.value) || 0))}
+                          onChange={(e) => setNeck(e.target.value === "" ? "" : parseFloat(e.target.value) || 0)}
                           className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1E00FA] font-semibold text-center"
                         />
                       </div>
@@ -456,7 +470,7 @@ export default function CalculatorPage() {
                         <input
                           type="number"
                           value={waist}
-                          onChange={(e) => setWaist(Math.max(10, parseInt(e.target.value) || 0))}
+                          onChange={(e) => setWaist(e.target.value === "" ? "" : parseFloat(e.target.value) || 0)}
                           className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1E00FA] font-semibold text-center"
                         />
                       </div>
@@ -467,7 +481,7 @@ export default function CalculatorPage() {
                         <input
                           type="number"
                           value={hip}
-                          onChange={(e) => setHip(Math.max(10, parseInt(e.target.value) || 0))}
+                          onChange={(e) => setHip(e.target.value === "" ? "" : parseFloat(e.target.value) || 0)}
                           className="w-full p-2.5 border border-gray-200 rounded-lg text-xs outline-none focus:border-[#1E00FA] font-semibold text-center"
                         />
                       </div>

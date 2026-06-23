@@ -206,12 +206,12 @@ export default function FitLinePage() {
       {/* OPTIMAL SET HIGHLIGHT BANNER */}
       <section className="bg-[#1E00FA]/5 py-24 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center">
-          <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-md border border-gray-100 bg-white order-2 md:order-1">
+          <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-md border border-gray-100 bg-[#EFEFEF] order-2 md:order-1">
             <Image
-              src="/fitline_optimal_set.png"
-              alt="FitLine Optimal Set"
+              src="/WhatsApp Image 2026-06-23 at 1.30.40 PM.jpeg"
+              alt="FitLine Optimal Set Premium Banner"
               fill
-              className="object-contain p-6"
+              className="object-cover"
             />
           </div>
           <div className="space-y-6 order-1 md:order-2">

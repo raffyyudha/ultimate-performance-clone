@@ -317,7 +317,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             {[
               { name: "Julian Koh", loc: "Sentosa Cove", text: "The convenience of mobile training at my condo gym is unmatched. The coach's professionalism and structured tracking keeps me extremely consistent." },
-              { name: "Sarah Lim", loc: "Orchard Road", text: "Using FitLine supplements alongside my mobile training completely upgraded my daily energy levels. Highly recommend Quatre Fitness!" },
+              { name: "Marcus Lim", loc: "Orchard Road", text: "Using FitLine supplements alongside my mobile training completely upgraded my daily energy levels. Highly recommend Quatre Fitness!" },
               { name: "Robert Chen", loc: "Marina Bay", text: "Quatre Fitness has built a true lifestyle ecosystem. The training plans are bespoke, the Quatre apparel is premium, and my posture is fully restored." },
             ].map((review, i) => (
               <div key={i} className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-left">
