@@ -24,6 +24,7 @@ export default function ContactPage() {
     "Post-rehab & corrective exercise",
     "Executive lifestyle fitness",
     "Seniors & active aging",
+    "Gym Membership (Johor Bahru - RM 250/month)",
     "FitLine Supplements",
     "Quatre Merch Apparel",
     "Corporate Wellness Partnerships",
@@ -33,6 +34,7 @@ export default function ContactPage() {
     "Condo Gym",
     "Private Home",
     "Office Gym",
+    "Quatre Fitness @ Kingston 16 Hotel (Johor Bahru)",
     "Preferred Private Location",
   ];
 

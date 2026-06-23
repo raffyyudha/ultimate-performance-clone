@@ -337,31 +337,67 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Locations Section */}
+      {/* Locations & Facilities Section */}
       <section className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div>
-              <span className="text-sm border border-maroon text-maroon px-3 py-1 rounded-full">SERVICE AREA</span>
-              <h2 className="font-sans text-4xl md:text-5xl font-bold mt-4 uppercase">
-                MOBILE COACHING ACROSS SINGAPORE
-              </h2>
-            </div>
-            <div>
-              <p className="text-gray-600 mb-6">
-                Our certified coaches deliver personalized personal training directly to your home, office, condominium gym, or preferred private location anywhere in Singapore. No crowds, no commutes, maximum efficiency.
-              </p>
-              <a href="https://wa.me/6581379850" className="inline-flex items-center gap-2 btn-outline text-maroon font-bold border-maroon">
-                CONTACT VIA WHATSAPP
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
-            </div>
+          <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <span className="text-xs border border-maroon text-maroon px-3 py-1 rounded-full uppercase font-semibold">OUR LOCATIONS & FACILITIES</span>
+            <h2 className="font-sans text-4xl md:text-5xl font-bold mt-4 uppercase">
+              Where to find us
+            </h2>
           </div>
 
-          <div className="mt-12 relative h-[400px] bg-gray-200 rounded-lg overflow-hidden">
-            <Image src="/singapore_mobile_coaching.png" alt="Singapore map" fill className="object-cover" />
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Card 1: Singapore (Mobile PT) */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex flex-col justify-between">
+              <div>
+                <div className="relative h-[250px] bg-gray-100">
+                  <Image src="/singapore_mobile_coaching.png" alt="Singapore mobile coaching coverage map" fill className="object-cover" />
+                </div>
+                <div className="p-8 space-y-4">
+                  <span className="text-xs font-bold text-maroon uppercase tracking-widest">SINGAPORE</span>
+                  <h3 className="font-sans text-2xl font-bold">Mobile Coaching & Personal Training</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Our certified coaches deliver personalized personal training directly to your home, office, condominium gym, or preferred private location anywhere in Singapore. No crowds, no commutes, maximum efficiency.
+                  </p>
+                </div>
+              </div>
+              <div className="p-8 pt-0">
+                <a href="https://wa.me/6581379850?text=Hi%20Quatre,%20I%20would%20like%20to%20enquire%20about%20your%20Singapore%20mobile%20personal%20training%20packages." className="w-full bg-black text-white hover:bg-maroon text-center text-xs py-3.5 rounded-full font-bold uppercase tracking-wider block transition-colors shadow-sm">
+                  Enquire via WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2: Johor Bahru Gym Facility */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex flex-col justify-between">
+              <div>
+                <div className="relative h-[250px] bg-black">
+                  <Image src="/pt_history.png" alt="Quatre Fitness @ Kingston 16 Hotel" fill className="object-cover opacity-80" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-6 left-8 space-y-1">
+                    <p className="text-xs text-red-200 font-bold uppercase tracking-widest">PHYSICAL GYM FACILITY</p>
+                    <h4 className="text-white font-sans text-xl font-bold">Kingston 16 Hotel</h4>
+                  </div>
+                </div>
+                <div className="p-8 space-y-4">
+                  <span className="text-xs font-bold text-maroon uppercase tracking-widest">JOHOR BAHRU, MALAYSIA</span>
+                  <h3 className="font-sans text-2xl font-bold">Quatre Fitness @ Kingston 16 Hotel</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    Access our premium physical gym facility located at Kingston 16 Hotel in Johor Bahru. Outfitted with state-of-the-art strength training and cardio equipment for your daily conditioning needs.
+                  </p>
+                  <div className="bg-maroon/5 border border-maroon/20 p-4 rounded-xl flex justify-between items-center mt-4">
+                    <span className="text-xs text-gray-700 font-semibold uppercase tracking-wider">Gym Membership</span>
+                    <strong className="text-maroon text-lg font-black">RM 250 / month</strong>
+                  </div>
+                </div>
+              </div>
+              <div className="p-8 pt-0">
+                <a href="https://wa.me/6581379850?text=Hi%20Quatre,%20I%20would%20like%20to%20enquire%20about%20the%20gym%20membership%20at%20Kingston%2016%20Hotel,%20Johor%20Bahru%20(RM%20250%2Fmonth)." className="w-full bg-black text-white hover:bg-maroon text-center text-xs py-3.5 rounded-full font-bold uppercase tracking-wider block transition-colors shadow-sm">
+                  Enquire via WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -396,6 +432,7 @@ export default function Home() {
                 className="w-full p-4 border border-gray-300 rounded-lg bg-white outline-none focus:border-maroon text-sm font-semibold"
               >
                 <option value="Singapore (Mobile PT Coverage)">Singapore (Mobile PT Coverage)</option>
+                <option value="Johor Bahru, Malaysia (Physical Gym)">Johor Bahru, Malaysia (Physical Gym)</option>
               </select>
               <select
                 value={location}
@@ -406,6 +443,7 @@ export default function Home() {
                 <option value="Condo Gym">Condo Gym</option>
                 <option value="Private Home">Private Home</option>
                 <option value="Office Gym">Office Gym</option>
+                <option value="Quatre Fitness @ Kingston 16 Hotel (Johor Bahru)">Quatre Fitness @ Kingston 16 Hotel (Johor Bahru)</option>
                 <option value="Other / Preferred Location">Other / Preferred Location</option>
               </select>
             </div>
