@@ -32,7 +32,11 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group relative z-50" onClick={() => setMobileMenu(false)}>
+        <Link
+          href="/"
+          className="flex items-center gap-2 group relative z-50"
+          onClick={() => setMobileMenu(false)}
+        >
           <Image
             src="/logoquatre.png"
             alt="Quatre Logo"
@@ -79,18 +83,40 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           className={`lg:hidden p-2 transition-colors duration-300 relative z-50 ${
-            mobileMenu ? "text-white hover:text-maroon" : "text-black hover:text-maroon"
+            mobileMenu
+              ? "text-white hover:text-maroon"
+              : "text-black hover:text-maroon"
           }`}
           onClick={() => setMobileMenu(!mobileMenu)}
           aria-label="Toggle Menu"
         >
           {mobileMenu ? (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           ) : (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           )}
         </button>
@@ -133,10 +159,15 @@ export default function Header() {
               <p className="font-black text-white tracking-widest text-[9px] uppercase">
                 QUATRE FITNESS
               </p>
-              <a href="https://wa.me/6581379850" className="hover:text-maroon transition-colors font-semibold text-[10px]">
+              <a
+                href="https://wa.me/6581379850"
+                className="hover:text-maroon transition-colors font-semibold text-[10px]"
+              >
                 WhatsApp: +65 8137 9850
               </a>
-              <p className="text-[9px] text-gray-600">© 2026 Quatre Fitness Group Pte Ltd.</p>
+              <p className="text-[9px] text-gray-600">
+                © 2026 Quatre Fitness Group Pte Ltd.
+              </p>
             </div>
           </div>
         </div>

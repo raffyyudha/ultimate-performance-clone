@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Script from "next/script";
+import ConditionalLayout from "@/components/ConditionalLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,14 +20,12 @@ export const metadata: Metadata = {
     default: "Quatre Fitness | Premium Personal Training & Wellness",
     template: "%s | Quatre Fitness",
   },
-  description: "Quatre Fitness Group is a premium Singapore-based fitness and wellness lifestyle group delivering mobile coaching, custom athletic apparel, and premium supplements.",
+  description:
+    "Quatre Fitness Group is a premium Singapore-based fitness and wellness lifestyle group delivering mobile coaching, custom athletic apparel, and premium supplements.",
   icons: {
     icon: "/logoquatre.png",
   },
 };
-
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -47,9 +46,9 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning className="antialiased">
         <ClientBody>
-          <Header />
-          {children}
-          <Footer />
+          <ConditionalLayout>
+            {children}
+          </ConditionalLayout>
         </ClientBody>
       </body>
     </html>
