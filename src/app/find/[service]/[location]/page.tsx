@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export const dynamic = "force-static";
+export const runtime = "edge";
 import {
   SERVICES,
   LOCATIONS,
@@ -19,18 +19,6 @@ interface Props {
   }>;
 }
 
-export async function generateStaticParams() {
-  const list: { service: string; location: string }[] = [];
-  for (const s of SERVICES) {
-    for (const l of LOCATIONS) {
-      list.push({
-        service: s.slug,
-        location: l.slug,
-      });
-    }
-  }
-  return list;
-}
 
 export async function generateMetadata({ params }: Props) {
   const { service, location } = await params;

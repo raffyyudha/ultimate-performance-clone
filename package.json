@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --turbopack",
     "build": "node scripts/generate-sitemap.js && next build",
+    "build:cf": "node scripts/generate-sitemap.js && npx @cloudflare/next-on-pages",
     "start": "next start",
     "lint": "npx tsc --noEmit && next lint",
     "format": "npx biome format --write"
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@cloudflare/next-on-pages": "^1.13.16",
     "@eslint/eslintrc": "^3.3.1",
     "@types/node": "^20.17.50",
     "@types/react": "^18.3.22",

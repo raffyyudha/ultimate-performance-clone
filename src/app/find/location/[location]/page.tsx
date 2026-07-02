@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-export const dynamic = "force-static";
+export const runtime = "edge";
 import { LOCATIONS, SERVICES, getLocation } from "@/lib/pseo-data";
 
 interface Props {
@@ -10,11 +10,6 @@ interface Props {
   }>;
 }
 
-export async function generateStaticParams() {
-  return LOCATIONS.map((l) => ({
-    location: l.slug,
-  }));
-}
 
 export async function generateMetadata({ params }: Props) {
   const { location } = await params;
