@@ -56,7 +56,7 @@ export default function MerchClient({ content }: MerchClientProps) {
       title: 'Quatre "Undefeated" Premium Gift Box',
       price: "SGD 150.00",
       desc: "A premium lifestyle gift set featuring our signature white 'Undefeated' tee, a classic structured athletic cap, custom training socks, and a sleek black hoodie, all housed in a luxury custom presentation box.",
-      img: "/WhatsApp Image 2026-06-23 at 1.27.46 PM.jpeg",
+      img: "/whatsapp_merch_5.jpeg",
       waText:
         'Hi Quatre, I would like to enquire about the Quatre "Undefeated" Premium Gift Box (SGD 150.00).',
     },
@@ -64,7 +64,7 @@ export default function MerchClient({ content }: MerchClientProps) {
       title: 'Quatre "Stronger" Premium Gift Box',
       price: "SGD 150.00",
       desc: "An elite performance gift set containing our signature black 'Stronger' tee, a structured athlete cap, training socks, and exclusive Quatre sticker pack, presented in a luxury custom presentation box.",
-      img: "/WhatsApp Image 2026-06-23 at 1.27.47 PM.jpeg",
+      img: "/whatsapp_merch_6.jpeg",
       waText:
         'Hi Quatre, I would like to enquire about the Quatre "Stronger" Premium Gift Box (SGD 150.00).',
     },
@@ -126,7 +126,7 @@ export default function MerchClient({ content }: MerchClientProps) {
         </div>
         <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-[#E0E0E0]">
           <Image
-            src="/WhatsApp Image 2026-06-23 at 1.53.30 PM.jpeg"
+            src="/whatsapp_about_1.jpeg"
             alt="Quatre Merch Premium Showcase"
             fill
             className="object-cover"

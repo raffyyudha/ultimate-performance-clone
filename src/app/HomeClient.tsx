@@ -151,7 +151,7 @@ export default function HomeClient({ content }: HomeClientProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[2/3] w-full max-w-[340px] md:max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-100/60 bg-white">
               <Image
-                src={content?.pillar1_image ?? "/WhatsApp Image 2026-06-19 at 10.29.03 PM (1).jpeg"}
+                src={content?.pillar1_image ?? "/whatsapp_pt_1.jpeg"}
                 alt="Home & Mobile PT"
                 fill
                 className="object-cover"
@@ -191,7 +191,7 @@ export default function HomeClient({ content }: HomeClientProps) {
             </div>
             <div className="relative aspect-[2/3] w-full max-w-[340px] md:max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-100/60 bg-white order-1 md:order-2">
               <Image
-                src={content?.pillar2_image ?? "/WhatsApp Image 2026-06-19 at 10.42.50 PM.jpeg"}
+                src={content?.pillar2_image ?? "/whatsapp_merch_4.jpeg"}
                 alt="Quatre Merch"
                 fill
                 className="object-cover"
@@ -243,7 +243,7 @@ export default function HomeClient({ content }: HomeClientProps) {
             </div>
             <div className="relative aspect-[2/3] w-full max-w-[340px] md:max-w-md mx-auto rounded-2xl overflow-hidden shadow-lg border border-gray-100/60 bg-white order-1 md:order-2">
               <Image
-                src={content?.pillar4_image ?? "/WhatsApp Image 2026-06-19 at 10.29.03 PM (3).jpeg"}
+                src={content?.pillar4_image ?? "/whatsapp_pt_3.jpeg"}
                 alt="Events"
                 fill
                 className="object-cover"

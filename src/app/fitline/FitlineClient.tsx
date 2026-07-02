@@ -257,7 +257,7 @@ export default function FitlineClient({ content }: FitlineClientProps) {
         <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center">
           <div className="relative h-[480px] rounded-3xl overflow-hidden shadow-md border border-gray-100 bg-[#EFEFEF] order-2 md:order-1">
             <Image
-              src="/WhatsApp Image 2026-06-23 at 1.30.40 PM.jpeg"
+              src="/whatsapp_fitline_1.jpeg"
               alt="FitLine Optimal Set Premium Banner"
               fill
               className="object-cover"
