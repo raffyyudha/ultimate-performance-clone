@@ -5,7 +5,7 @@ export const runtime = "edge";
 import { useState, useEffect, useCallback, use } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { getPageContent, upsertPageContent } from "@/lib/supabase";
+import { getPageContent, upsertPageContent, supabase } from "@/lib/supabase";
 
 interface FieldDef {
   key: string;
@@ -222,16 +222,19 @@ export default function AdminPageEditor({ params }: Props) {
   }, [slug]);
 
   useEffect(() => {
-    const auth = localStorage.getItem("quatre_admin_auth");
-    if (auth !== "true") {
-      router.replace("/admin");
-      return;
+    async function verifyAuth() {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        router.replace("/admin");
+        return;
+      }
+      if (!pageConfig) {
+        router.replace("/admin/dashboard");
+        return;
+      }
+      fetchContent();
     }
-    if (!pageConfig) {
-      router.replace("/admin/dashboard");
-      return;
-    }
-    fetchContent();
+    verifyAuth();
   }, [router, pageConfig, fetchContent, slug]);
 
   const handleFieldChange = (key: string, value: string) => {

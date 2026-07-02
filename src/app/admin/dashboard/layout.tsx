@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
+import { supabase } from "@/lib/supabase";
 
 const MENU_ITEMS = [
   { slug: "home", label: "Home Page", icon: "🏠" },
@@ -27,16 +28,34 @@ export default function DashboardLayout({
   const [authorized, setAuthorized] = useState(false);
 
   useEffect(() => {
-    const auth = localStorage.getItem("quatre_admin_auth");
-    if (auth !== "true") {
-      router.replace("/admin");
-    } else {
-      setAuthorized(true);
+    async function checkAuth() {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) {
+        router.replace("/admin");
+      } else {
+        setAuthorized(true);
+      }
     }
+
+    checkAuth();
+
+    // Listen for auth state changes (e.g. if session expires or user logs out elsewhere)
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (!session) {
+        setAuthorized(false);
+        router.replace("/admin");
+      } else {
+        setAuthorized(true);
+      }
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
   }, [router]);
 
-  const handleLogout = () => {
-    localStorage.removeItem("quatre_admin_auth");
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
     router.replace("/admin");
   };
 

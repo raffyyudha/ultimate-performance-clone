@@ -2,35 +2,42 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-
-const ADMIN_PASSWORD = "Quatregymgood123!";
+import { supabase } from "@/lib/supabase";
 
 export default function AdminLoginPage() {
   const router = useRouter();
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
 
-  // Check if already logged in
+  // Check if already logged in via active Supabase session
   useEffect(() => {
-    const auth = localStorage.getItem("quatre_admin_auth");
-    if (auth === "true") {
-      router.replace("/admin/dashboard");
-    } else {
-      setLoading(false);
+    async function checkSession() {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session) {
+        router.replace("/admin/dashboard");
+      } else {
+        setLoading(false);
+      }
     }
+    checkSession();
   }, [router]);
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
 
-    if (password === ADMIN_PASSWORD) {
-      localStorage.setItem("quatre_admin_auth", "true");
-      router.push("/admin/dashboard");
-    } else {
-      setError("Incorrect password. Please try again.");
+    const { data, error: authError } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (authError) {
+      setError(authError.message);
       setPassword("");
+    } else {
+      router.push("/admin/dashboard");
     }
   };
 
@@ -54,12 +61,31 @@ export default function AdminLoginPage() {
             Admin Dashboard
           </h1>
           <p className="text-gray-400 text-sm mt-1">
-            Enter password to continue
+            Sign in to manage your site content
           </p>
         </div>
 
         {/* Login Form */}
         <form onSubmit={handleLogin} className="space-y-4">
+          <div>
+            <label
+              htmlFor="admin-email"
+              className="block text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2"
+            >
+              Email Address
+            </label>
+            <input
+              id="admin-email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="admin@quatrefitness.com"
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg text-black text-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder:text-gray-300"
+              autoFocus
+              required
+            />
+          </div>
+
           <div>
             <label
               htmlFor="admin-password"
@@ -72,9 +98,8 @@ export default function AdminLoginPage() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter admin password"
+              placeholder="Enter password"
               className="w-full px-4 py-3 border border-gray-200 rounded-lg text-black text-sm focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder:text-gray-300"
-              autoFocus
               required
             />
           </div>
